@@ -3,6 +3,10 @@ title: "Home"
 nav_order: 1
 ---
 
+> [!warning] Notice: Under development!
+> This material is currently under development. Content, structure, pictures, examples, and linked resources may change.
+
+
 # LUMI AIF Learning Template
 
 This is the official template for creating clean, branded self-learning course sites. By using this template, you ensure that your training materials match the **LUMI AI Factory** visual identity automatically.
