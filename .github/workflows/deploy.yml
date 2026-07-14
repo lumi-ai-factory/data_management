@@ -1,0 +1,76 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  page_build:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # Skip only the first automatic push created by GitHub's "Use this template".
+    # Manual runs, Pages-triggered runs, normal pushes, and re-runs all deploy.
+    if: github.event_name != 'push' || github.event.created != true || github.run_attempt > 1
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history so the sitemap can use real per-page git commit dates.
+          fetch-depth: 0
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+      - name: Configure base path and site URL
+        run: |
+          # Compute the GitHub Pages base path: "/<repo>/" for project sites,
+          # "/" for user/organisation sites (repo named "<user>.github.io").
+          OWNER="${GITHUB_REPOSITORY%%/*}"
+          REPO="${GITHUB_REPOSITORY#*/}"
+          OWNER_LC="${OWNER,,}"
+          if [[ "$REPO" == *.github.io ]]; then
+            echo "VITE_BASE_PATH=/" >> "$GITHUB_ENV"
+            echo "VITE_SITE_URL=https://${OWNER_LC}.github.io" >> "$GITHUB_ENV"
+          else
+            echo "VITE_BASE_PATH=/$REPO/" >> "$GITHUB_ENV"
+            echo "VITE_SITE_URL=https://${OWNER_LC}.github.io/$REPO" >> "$GITHUB_ENV"
+          fi
+      - name: Build
+        run: bun run build
+        env:
+          VITE_BASE_PATH: ${{ env.VITE_BASE_PATH }}
+          VITE_SITE_URL: ${{ env.VITE_SITE_URL }}
+      - name: Prepare static site
+        run: |
+          # TanStack Start SPA mode emits a single _shell.html in dist/client.
+          # GitHub Pages needs index.html (homepage) and 404.html (deep-link
+          # fallback) so client-side routing works on hard refresh.
+          cp dist/client/_shell.html dist/client/index.html
+          cp dist/client/_shell.html dist/client/404.html
+          # Disable Jekyll so files/folders starting with _ are served as-is.
+          touch dist/client/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/client
+
+  deploy:
+    needs: build
+    if: github.event_name != 'push' || github.event.created != true || github.run_attempt > 1
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,869 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+@import "katex/dist/katex.min.css";
+/* Syntax highlighting palette is defined below using only LUMI brand colours
+   (no github.css import — that theme ships greens, reds, and oranges that
+   are not part of the LUMI AIF palette). */
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * LUMI AI Factory design tokens.
+ * The ONLY LUMI AIF brand colours (per the brand "Colours" screenshot):
+ *   white   #ffffff  (main)
+ *   black   #231f20  (main, "dark-dark-grey")
+ *   purple  #7477b8  (additional)
+ *   blue    #2c6789  (additional)
+ *   magenta #ec008c  (effect colour)
+ *
+ * Every token below is one of these five colours, or a mix of one of them
+ * with white or black. No other hues (no teal, no green, no light-blue).
+ * Light theme = brand colours mixed with white.
+ * Dark theme  = brand colours mixed with brand black.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* LUMI brand */
+  --color-lumi-purple: var(--lumi-purple);
+  --color-lumi-blue: var(--lumi-blue);
+  --color-lumi-magenta: var(--lumi-magenta);
+  --color-link: var(--link);
+
+  /* Code blocks */
+  --color-code-bg: var(--code-bg);
+  --color-code-border: var(--code-border);
+  --color-inline-code-bg: var(--inline-code-bg);
+  --color-inline-code-fg: var(--inline-code-fg);
+  --color-terminal-bg: var(--terminal-bg);
+  --color-terminal-chrome: var(--terminal-chrome);
+  --color-terminal-border: var(--terminal-border);
+  --color-terminal-fg: var(--terminal-fg);
+  --color-terminal-prompt: var(--terminal-prompt);
+  --color-terminal-chrome-fg: var(--terminal-chrome-fg);
+
+  /* Callouts */
+  --color-callout-note-bg: var(--callout-note-bg);
+  --color-callout-note-border: var(--callout-note-border);
+  --color-callout-warning-bg: var(--callout-warning-bg);
+  --color-callout-warning-border: var(--callout-warning-border);
+  --color-callout-info-bg: var(--callout-info-bg);
+  --color-callout-info-border: var(--callout-info-border);
+  --color-callout-tip-bg: var(--callout-tip-bg);
+  --color-callout-tip-border: var(--callout-tip-border);
+  --color-callout-command-bg: var(--callout-command-bg);
+  --color-callout-command-border: var(--callout-command-border);
+
+  /* Quiz */
+  --color-quiz-accent: var(--quiz-accent);
+  --color-quiz-correct: var(--quiz-correct);
+  --color-quiz-wrong: var(--quiz-wrong);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html {
+  font-size: 16px;
+}
+@media (min-width: 1280px) {
+  html { font-size: 17px; }
+}
+@media (min-width: 1536px) {
+  html { font-size: 18px; }
+}
+@media (min-width: 1920px) {
+  html { font-size: 19px; }
+}
+
+:root {
+  --radius: 0.625rem;
+
+  /* Brand palette (constant across themes) */
+  --lumi-purple: oklch(0.594 0.099 280.92);   /* #7477b8 */
+  --lumi-blue: oklch(0.49 0.082 237.06);      /* #2c6789 */
+  --lumi-magenta: oklch(0.616 0.253 355.14);  /* #ec008c */
+  --lumi-black: oklch(0.244 0.006 0.59);      /* #231f20 */
+
+  /* Light theme — brand mixed with white */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.225 0.004 17);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--foreground);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--foreground);
+  --primary: var(--lumi-blue);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.97 0.012 240);
+  --secondary-foreground: var(--lumi-blue);
+  --muted: oklch(0.965 0.005 240);
+  --muted-foreground: oklch(0.45 0.02 250);
+  --accent: oklch(0.95 0.04 290);
+  --accent-foreground: var(--lumi-purple);
+  --destructive: var(--lumi-magenta);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.91 0.01 240);
+  --input: oklch(0.91 0.01 240);
+  --ring: var(--lumi-blue);
+  --link: var(--lumi-blue);
+
+  --sidebar: oklch(0.985 0.008 290);                       /* very-light-purple */
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--lumi-blue);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.93 0.03 290);
+  --sidebar-accent-foreground: var(--lumi-blue);
+  --sidebar-border: oklch(0.9 0.02 290);
+  --sidebar-ring: var(--lumi-blue);
+
+  --code-bg: oklch(0.978 0.008 240);
+  --code-border: oklch(0.9 0.02 240);
+  --inline-code-bg: oklch(0.945 0.008 240);
+  --inline-code-fg: var(--lumi-blue);
+
+  --terminal-bg: #3d0a2c;                       /* classic Ubuntu aubergine */
+  --terminal-chrome: oklch(0.32 0.012 280);     /* Ubuntu titlebar */
+  --terminal-chrome-fg: oklch(0.96 0.005 280);
+  --terminal-border: oklch(0.18 0.04 350);
+  --terminal-fg: #ffffff;
+  --terminal-prompt: oklch(0.78 0.18 142);      /* Ubuntu green prompt */
+
+  --callout-note-bg: oklch(0.97 0.018 290);
+  --callout-note-border: oklch(0.85 0.04 290);
+  --callout-warning-bg: color-mix(in oklab, var(--lumi-magenta) 8%, white);
+  --callout-warning-border: color-mix(in oklab, var(--lumi-magenta) 28%, white);
+  /* Info = lighter blue, Tip = deeper blue (same hue, different intensity) */
+  --callout-info-bg: color-mix(in oklab, var(--lumi-blue) 6%, white);
+  --callout-info-border: color-mix(in oklab, var(--lumi-blue) 24%, white);
+  --callout-tip-bg: color-mix(in oklab, var(--lumi-blue) 18%, white);
+  --callout-tip-border: color-mix(in oklab, var(--lumi-blue) 52%, white);
+  --callout-command-bg: oklch(0.96 0.012 240);
+  --callout-command-border: oklch(0.83 0.04 240);
+
+  --quiz-card-bg: oklch(0.985 0.012 290);
+  --quiz-card-border: oklch(0.86 0.04 290);
+  --quiz-header-bg: color-mix(in oklab, var(--lumi-purple) 8%, white);
+  --quiz-accent: var(--lumi-blue);
+  --quiz-correct: oklch(0.52 0.13 165);  /* green */
+  --quiz-wrong: oklch(0.55 0.21 27);     /* red */
+  --quiz-correct-bg: color-mix(in oklab, var(--quiz-correct) 12%, white);
+  --quiz-correct-border: color-mix(in oklab, var(--quiz-correct) 45%, white);
+  --quiz-wrong-bg: color-mix(in oklab, var(--quiz-wrong) 10%, white);
+  --quiz-wrong-border: color-mix(in oklab, var(--quiz-wrong) 42%, white);
+  --quiz-selected-border: var(--lumi-purple);
+}
+
+
+.dark {
+  /* Dark theme — brand mixed with LUMI black */
+  --background: oklch(0.18 0.01 250);
+  --foreground: oklch(0.97 0.005 240);
+  --card: oklch(0.22 0.012 250);
+  --card-foreground: var(--foreground);
+  --popover: oklch(0.22 0.012 250);
+  --popover-foreground: var(--foreground);
+  --primary: oklch(0.72 0.092 237);          /* lighter LUMI blue for dark bg */
+  --primary-foreground: oklch(0.18 0.01 250);
+  --secondary: oklch(0.27 0.02 250);
+  --secondary-foreground: var(--foreground);
+  --muted: oklch(0.26 0.015 250);
+  --muted-foreground: oklch(0.72 0.015 240);
+  --accent: oklch(0.32 0.05 290);
+  --accent-foreground: oklch(0.95 0.02 290);
+  --destructive: var(--lumi-magenta);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 16%);
+  --ring: oklch(0.7 0.092 237);
+  --link: oklch(0.74 0.092 237);
+
+  --sidebar: oklch(0.22 0.014 252);
+  --sidebar-foreground: oklch(0.95 0.005 240);
+  --sidebar-primary: oklch(0.72 0.092 237);
+  --sidebar-primary-foreground: oklch(0.18 0.01 250);
+  --sidebar-accent: oklch(0.3 0.04 290);
+  --sidebar-accent-foreground: oklch(0.95 0.02 290);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.7 0.092 237);
+
+  --code-bg: oklch(0.24 0.014 250);
+  --code-border: oklch(1 0 0 / 10%);
+  --inline-code-bg: oklch(0.28 0.018 250);
+  --inline-code-fg: oklch(0.8 0.08 237);
+
+  --terminal-bg: #3d0a2c;
+  --terminal-chrome: oklch(0.28 0.012 280);
+  --terminal-chrome-fg: oklch(0.96 0.005 280);
+  --terminal-border: oklch(0.16 0.04 350);
+  --terminal-fg: #ffffff;
+  --terminal-prompt: oklch(0.78 0.18 142);
+
+  --callout-note-bg: oklch(0.27 0.04 290);
+  --callout-note-border: oklch(0.4 0.08 290);
+  --callout-warning-bg: oklch(0.32 0.13 355.14);
+  --callout-warning-border: oklch(0.7 0.28 355.14);
+  /* Info = lighter blue, Tip = deeper blue — mirrors the light-theme split */
+  --callout-info-bg: oklch(0.28 0.045 237);
+  --callout-info-border: oklch(0.44 0.08 237);
+  --callout-tip-bg: oklch(0.36 0.075 237);
+  --callout-tip-border: oklch(0.56 0.11 237);
+  --callout-command-bg: oklch(0.23 0.012 250);
+  --callout-command-border: oklch(1 0 0 / 12%);
+
+  --quiz-card-bg: oklch(0.23 0.014 252);
+  --quiz-card-border: oklch(1 0 0 / 12%);
+  --quiz-header-bg: oklch(0.27 0.03 290);
+  --quiz-accent: oklch(0.72 0.092 237);
+  --quiz-correct: oklch(0.74 0.14 165);  /* green */
+  --quiz-wrong: oklch(0.7 0.2 27);       /* red */
+  --quiz-correct-bg: color-mix(in oklab, var(--quiz-correct) 16%, transparent);
+  --quiz-correct-border: color-mix(in oklab, var(--quiz-correct) 50%, transparent);
+  --quiz-wrong-bg: color-mix(in oklab, var(--quiz-wrong) 16%, transparent);
+  --quiz-wrong-border: color-mix(in oklab, var(--quiz-wrong) 50%, transparent);
+  --quiz-selected-border: oklch(0.72 0.09 290);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html,
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  code,
+  pre,
+  kbd {
+    font-family: var(--font-mono);
+     font-variant-ligatures: none;
+  }
+}
+
+/* ============= Markdown content styling ============= */
+
+.prose-lumi {
+  color: var(--color-foreground);
+  line-height: 1.7;
+  font-size: 1rem;
+  max-width: 78ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prose-lumi h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0 0 1.5rem;
+  color: var(--color-foreground);
+}
+
+.prose-lumi h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin: 2.25rem 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.prose-lumi h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 1.75rem 0 0.5rem;
+}
+
+/* Drop-cap on the first paragraph of a chapter — slightly larger than body
+   text, painted in LUMI magenta. Skipped automatically when the first block
+   is a heading or callout (because :first-of-type only matches paragraphs). */
+.prose-lumi > p:first-of-type::first-letter {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: var(--lumi-magenta);
+  line-height: 1;
+  padding-right: 0.04em;
+}
+
+@media (min-width: 1280px) {
+  .prose-lumi p {
+    line-height: 1.78;
+  }
+}
+
+.prose-lumi h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.prose-lumi p,
+.prose-lumi ul,
+.prose-lumi ol {
+  margin: 0.9rem 0;
+}
+
+.prose-lumi ul,
+.prose-lumi ol {
+  padding-left: 1.5rem;
+}
+
+.prose-lumi ul {
+  list-style: disc;
+}
+
+.prose-lumi ol {
+  list-style: decimal;
+}
+
+.prose-lumi li {
+  margin: 0.3rem 0;
+}
+
+.prose-lumi li > p {
+  margin: 0.3rem 0;
+}
+
+.prose-lumi hr {
+  margin: 2.5rem 0;
+  border: none;
+  border-top: 1px solid var(--color-border);
+}
+
+.prose-lumi strong {
+  color: var(--color-foreground);
+  font-weight: 600;
+}
+
+.prose-lumi table {
+  width: 100%;
+  margin: 1.25rem 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.prose-lumi th,
+.prose-lumi td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.prose-lumi th {
+  background: var(--color-muted);
+  font-weight: 600;
+}
+
+.prose-lumi img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.prose-lumi figure {
+  margin: 1.5rem 0;
+}
+
+.prose-lumi figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-muted-foreground);
+  text-align: center;
+}
+
+.prose-lumi h1 a:not(.heading-anchor),
+.prose-lumi h2 a:not(.heading-anchor),
+.prose-lumi h3 a:not(.heading-anchor),
+.prose-lumi h4 a:not(.heading-anchor) {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Heading anchors: appear on hover, copy deep-link to clipboard. */
+.prose-lumi h1,
+.prose-lumi h2,
+.prose-lumi h3,
+.prose-lumi h4 {
+  scroll-margin-top: 5rem;
+  position: relative;
+}
+
+.prose-lumi .heading-anchor {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.4em;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--lumi-magenta);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  text-decoration: none;
+   vertical-align: middle;
+}
+
+.prose-lumi .heading-anchor svg {
+  display: block;
+}
+
+.prose-lumi h1:hover .heading-anchor,
+.prose-lumi h2:hover .heading-anchor,
+.prose-lumi h3:hover .heading-anchor,
+.prose-lumi h4:hover .heading-anchor,
+.prose-lumi .heading-anchor:focus {
+  opacity: 1;
+}
+
+.callout-body p,
+.callout-body ul,
+.callout-body ol {
+  margin: 0.5rem 0;
+}
+
+/* Glossary terms: marked with [[term]] in markdown. Subtle dashed underline
+   in the LUMI link colour signals the word is interactive; magenta on hover. */
+.glossary-term {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: var(--link);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  cursor: help;
+  transition: text-decoration-color 0.15s ease;
+  outline: none;
+}
+
+.glossary-term:hover,
+.glossary-term:focus-visible {
+  text-decoration-color: var(--lumi-magenta);
+}
+
+.glossary-term:focus-visible {
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--lumi-magenta) 45%, transparent);
+}
+
+/* ============= Syntax highlighting (LUMI palette only) =============
+   Hues used: 237 (blue), 281 (purple), 355 (magenta) — LUMI AIF only.
+   Lightness adjusted for sufficient contrast in light vs dark mode. */
+.hljs {
+  background: transparent !important;
+  color: var(--color-foreground);
+  padding: 0 !important;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-built_in,
+.hljs-name,
+.hljs-tag,
+.hljs-title,
+.hljs-section {
+  color: var(--lumi-blue);
+  font-weight: 600;
+}
+
+.hljs-string,
+.hljs-attr,
+.hljs-literal,
+.hljs-number,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-regexp {
+  color: var(--lumi-magenta);
+}
+
+.hljs-type,
+.hljs-class .hljs-title,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-params {
+  color: var(--lumi-purple);
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-meta,
+.hljs-deletion {
+  color: var(--color-muted-foreground);
+  font-style: italic;
+}
+
+.dark .hljs-keyword,
+.dark .hljs-selector-tag,
+.dark .hljs-built_in,
+.dark .hljs-name,
+.dark .hljs-tag,
+.dark .hljs-title,
+.dark .hljs-section {
+  color: oklch(0.78 0.1 237); /* lighter LUMI blue — readable on dark bg */
+}
+
+.dark .hljs-string,
+.dark .hljs-attr,
+.dark .hljs-literal,
+.dark .hljs-number,
+.dark .hljs-symbol,
+.dark .hljs-bullet,
+.dark .hljs-regexp {
+  color: color-mix(in oklab, var(--lumi-magenta) 78%, white); /* brighter LUMI magenta */
+}
+
+.dark .hljs-type,
+.dark .hljs-class .hljs-title,
+.dark .hljs-variable,
+.dark .hljs-template-variable,
+.dark .hljs-params {
+  color: oklch(0.78 0.09 290);
+}
+
+/* ============= Per-line wrapping for code blocks ============= */
+.code-line {
+  display: block;
+  min-height: 1.5em;
+}
+
+.code-line-hl {
+  background: color-mix(in oklab, var(--lumi-magenta) 12%, transparent);
+  margin: 0 -1rem;
+  padding: 0 1rem;
+  border-left: 2px solid var(--lumi-magenta);
+}
+
+pre.with-line-numbers {
+  counter-reset: ln;
+}
+
+pre.with-line-numbers .code-line {
+  counter-increment: ln;
+}
+
+pre.with-line-numbers .code-line::before {
+  content: counter(ln);
+  display: inline-block;
+  width: 2em;
+  margin-right: 1em;
+  text-align: right;
+  color: color-mix(in oklab, var(--color-foreground) 35%, transparent);
+  user-select: none;
+}
+
+/* ============= Terminal-styled bash code blocks ============= */
+.terminal-block {
+  background: var(--color-terminal-bg);
+}
+
+.terminal-block pre {
+  background: var(--color-terminal-bg) !important;
+  color: var(--color-terminal-fg) !important;
+}
+
+.terminal-block pre code {
+  display: block;
+  counter-reset: tline;
+  color: var(--color-terminal-fg) !important;
+}
+
+.terminal-line {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+}
+
+.terminal-prompt {
+  color: var(--color-terminal-prompt);
+  font-weight: 600;
+  user-select: none;
+}
+
+.terminal-command {
+  min-width: 0;
+}
+
+/* Ubuntu-style title bar (flat dark gray, like GNOME headerbar) */
+.terminal-chrome {
+  background: #2c2c2c;
+  color: #ffffff;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.terminal-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 9999px;
+  background: #4a4a4a;
+  color: #ffffff;
+  font-size: 0.7rem;
+  line-height: 1;
+}
+
+/* Brighten hljs tokens inside terminal blocks so they read on the dark bg
+   regardless of theme. */
+.terminal-block .hljs {
+  color: var(--color-terminal-fg) !important;
+}
+
+.terminal-block .hljs-keyword,
+.terminal-block .hljs-selector-tag,
+.terminal-block .hljs-built_in,
+.terminal-block .hljs-name,
+.terminal-block .hljs-tag,
+.terminal-block .hljs-title,
+.terminal-block .hljs-section {
+  color: var(--color-terminal-fg) !important;
+  font-weight: 500;
+}
+
+.terminal-block .hljs-string,
+.terminal-block .hljs-attr,
+.terminal-block .hljs-literal,
+.terminal-block .hljs-number {
+  color: color-mix(in oklab, var(--lumi-magenta) 70%, white) !important;
+}
+
+.terminal-block .hljs-comment,
+.terminal-block .hljs-meta {
+  color: oklch(0.65 0.02 240) !important;
+  font-style: italic;
+}
+
+.terminal-block .hljs-variable,
+.terminal-block .hljs-params {
+  color: oklch(0.82 0.08 290) !important;
+}
+
+/* ============= nano editor styled .sh blocks ============= */
+.nano-block {
+  --nano-bg: #1b1b2b;
+  --nano-fg: #e8e8ef;
+  --nano-inverse: #e8e8ef;
+  --nano-inverse-fg: #1b1b2b;
+  background: var(--nano-bg);
+  color: var(--nano-fg);
+  border-color: #33334d;
+}
+
+.nano-block pre {
+  background: var(--nano-bg) !important;
+  color: var(--nano-fg) !important;
+}
+
+.nano-block pre code {
+  display: block;
+  color: var(--nano-fg) !important;
+}
+
+/* nano's titlebar — styled like a terminal header for coherence */
+.nano-titlebar {
+  background: #2c2c2c;
+  color: #ffffff;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.nano-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 9999px;
+  background: #4a4a4a;
+  color: #ffffff;
+  font-size: 0.7rem;
+  line-height: 1;
+}
+
+/* hljs token colors tuned for the dark nano body */
+.nano-block .hljs,
+.nano-block .hljs-keyword,
+.nano-block .hljs-built_in,
+.nano-block .hljs-name,
+.nano-block .hljs-title,
+.nano-block .hljs-section {
+  color: var(--nano-fg) !important;
+}
+
+.nano-block .hljs-string,
+.nano-block .hljs-attr,
+.nano-block .hljs-literal,
+.nano-block .hljs-number {
+  color: color-mix(in oklab, var(--lumi-magenta) 70%, white) !important;
+}
+
+.nano-block .hljs-comment,
+.nano-block .hljs-meta {
+  color: oklch(0.65 0.02 240) !important;
+  font-style: italic;
+}
+
+.nano-block .hljs-variable,
+.nano-block .hljs-params {
+  color: oklch(0.82 0.08 290) !important;
+}
+
+/* ---------- Quiz blocks ---------- */
+.quiz-card {
+  background: var(--quiz-card-bg);
+  border-color: var(--quiz-card-border);
+}
+
+.quiz-header {
+  background: var(--quiz-header-bg);
+  border-bottom: 1px solid var(--quiz-card-border);
+}
+
+.quiz-prompt {
+  font-size: 1.02rem;
+  line-height: 1.5;
+}
+
+.quiz-option {
+  background: var(--background);
+  border-color: var(--border);
+}
+
+.quiz-option .quiz-marker {
+  border-color: var(--border);
+  color: var(--muted-foreground);
+}
+
+.quiz-option-selected {
+  border-color: var(--quiz-selected-border);
+}
+
+.quiz-option-selected .quiz-marker {
+  border-color: var(--quiz-selected-border);
+  color: var(--quiz-accent);
+}
+
+.quiz-option-correct {
+  background: var(--quiz-correct-bg);
+  border-color: var(--quiz-correct-border);
+}
+
+.quiz-option-correct .quiz-marker {
+  border-color: var(--quiz-correct);
+  color: var(--quiz-correct);
+}
+
+.quiz-option-correct .quiz-marker-filled {
+  background: var(--quiz-correct);
+  border-color: var(--quiz-correct);
+  color: oklch(1 0 0);
+}
+
+.quiz-option-wrong {
+  background: var(--quiz-wrong-bg);
+  border-color: var(--quiz-wrong-border);
+}
+
+.quiz-option-wrong .quiz-marker {
+  border-color: var(--quiz-wrong);
+  color: var(--quiz-wrong);
+}
+
+.quiz-option-wrong .quiz-marker-filled {
+  background: var(--quiz-wrong);
+  border-color: var(--quiz-wrong);
+  color: oklch(1 0 0);
+}
+
+/* The option(s) the reader actually picked get a clear ring + badge. */
+.quiz-option-chosen {
+  box-shadow: inset 0 0 0 2px currentColor;
+}
+
+.quiz-option-correct.quiz-option-chosen {
+  color: var(--quiz-correct);
+}
+
+.quiz-option-wrong.quiz-option-chosen {
+  color: var(--quiz-wrong);
+}
+
+.quiz-chosen-badge {
+  background: color-mix(in oklab, currentColor 18%, transparent);
+  color: currentColor;
+}
+
+.quiz-btn {
+  background: var(--quiz-accent);
+  color: oklch(1 0 0);
+  transition: opacity 0.15s ease;
+}
+
+.quiz-btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.quiz-btn-secondary {
+  background: transparent;
+  color: var(--quiz-accent);
+  border: 1px solid var(--quiz-card-border);
+  transition: background-color 0.15s ease;
+}
+
+.quiz-btn-secondary:hover {
+  background: color-mix(in oklab, var(--quiz-accent) 12%, transparent);
+}
+
+.prose-lumi .quiz-card ul {
+  list-style: none !important;
+  margin: 0;
+  padding-left: 0;
+}
+
+.prose-lumi .quiz-card li {
+  padding-left: 0;
+  margin: 0;
+}
+
+.prose-lumi .quiz-card li::marker {
+  content: "";
+}
