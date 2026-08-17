@@ -11,12 +11,14 @@ Learn why data management matters for industrial AI and HPC (Section 1), what AI
 
 ## How to read this course
 
->[!note] This course is structured so you can choose your level of depth.
+>[!note] Note
 >
->**If you are short on time and want only to browse through the topics**, you can read only the **"Section at a Glance"** and **"Key Takeaways"** blocks to get a quick, high-level understanding of what matters and why.
->*"Section at a Glance"* can be found on each of the three main topic header pages, while *"Key Takeaways"* appear at the beginning of each subtopic.
+>This course is structured so you can choose your level of depth.
 
-**If you want deeper insight**, the full text explains how these issues appear in real industrial AI and HPC workflows and how organizations address them in practice.
+⏱️**If you are short on time and want only to browse through the topics**, you can read only the **"Section at a Glance"** and **"Key Takeaways"** blocks to get a quick, high-level understanding of what matters and why.
+*"Section at a Glance"* can be found on each of the three main topic header pages, while *"Key Takeaways"* appear at the beginning of each subtopic.
+
+🔍**If you want deeper insight**, the full text explains how these issues appear in real industrial AI and HPC workflows and how organizations address them in practice.
 
 Both approaches are supported, and you can move between them as your needs, role, or projects evolve.
 
