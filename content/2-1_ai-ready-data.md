@@ -44,7 +44,7 @@ TABLE HERE
 
 ## 2.2 Core characteristics of AI-ready data
 
-> [!TIP] Key takeaways
+> [!TIP] 💡 Key takeaways
 >
 > - Quality alone is not enough.
 > - AI-ready data is defined by a set of concrete data characteristics.
@@ -78,7 +78,7 @@ When these signals are present, data is not just available, it is ready to suppo
 
 ## 2.3 Why metadata is essential for AI-ready data
 
-> [!TIP] Key takeaways
+> [!TIP] 💡 Key takeaways
 >
 > - Metadata allows both people and machines to understand what data represents.
 > - Metadata enables automation and repeatable AI workflows.
@@ -118,6 +118,15 @@ In practice, many organizations have data that meets basic quality requirements 
 As AI workloads scale onto GPUs and HPC systems, small gaps in data readiness become visible. Data that requires manual handling, ad‑hoc fixes, or human interpretation at each step quickly blocks automation and efficient compute use.
 
 ### 2.4.1 What “data readiness” looks like in real AI & HPC workflows
+
+| If data is not ready | What happens at scale | If data is ready  |
+|:------|:-----------------|:-----------|:---------|
+| Manual preprocessing | Engineers fix data instead of improving models | Automated, repeatable pipelines |
+| Ad‑hoc fixes per run | Failed or delayed GPU/HPC jobs | Predictable training and simulation runs |
+| Poor discovery or access | Existing datasets are rebuilt | Datasets reused across teams |
+| Undocumented assumptions | Undocumented assumptions | Results cannot be explained later	Results are reproducible over time |
+| Sequential data access | Pipelines break under parallel I/O | Data scales efficiently in HPC |
+
 
 In LUMI‑type AI Factory environments, these differences surface quickly. Simulation data may not be reusable because preprocessing steps were not documented. Image or video datasets may need re‑encoding before every training run. Large text corpora may exist on shared storage but be difficult to discover or access at scale. Pipelines that work sequentially often fail when thousands of parallel workers expect consistent inputs.
 
