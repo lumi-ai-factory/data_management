@@ -5,14 +5,13 @@ nav_order: 6
 
 # 3. From data to scalable AI - FAIR‑aligned data lifecycle management for AI & HPC
 
-> [!tip]
-> ## **Section at a glance**
->
->The first part provides a high-level overview, risks, and practical checks for decision-makers and readers skimming for relevance. The rest of the section goes into detail for teams designing or operating AI and HPC data workflows.
->
->This section explains how managing data **across its full lifecycle** enables reliable, scalable AI and HPC workflows. It shows how planning, collection, storage, processing, documentation, preservation, and reuse are interconnected and how problems in one stage quickly affect the rest. The aim is to make data **FAIR-aligned and AI-ready**, so that expensive compute resources are used efficiently and results remain reproducible and reusable.
->
-> ### ⚠️ Costs and risks when data is poorly managed
+ ## **Section at a glance**
+
+The first part provides a high-level overview, risks, and practical checks for decision-makers and readers skimming for relevance. The rest of the section goes into detail for teams designing or operating AI and HPC data workflows.
+
+This section explains how managing data **across its full lifecycle** enables reliable, scalable AI and HPC workflows. It shows how planning, collection, storage, processing, documentation, preservation, and reuse are interconnected and how problems in one stage quickly affect the rest. The aim is to make data **FAIR-aligned and AI-ready**, so that expensive compute resources are used efficiently and results remain reproducible and reusable.
+
+>[!warning]### ⚠️ Costs and risks when data is poorly managed
 >
 >- **No planning:** Data does not meet AI or HPC requirements, leading to costly re-runs.
 >- **No validation or standards:** Poor-quality data reaches workflows and wastes compute.
@@ -20,8 +19,9 @@ nav_order: 6
 >- **No quality control:** Errors or bias propagate into models.
 >- **No metadata:** Data becomes unusable outside its original context.
 >- **No retention or reuse strategy:** Storage costs rise and teams rebuild datasets from scratch.
->
-> ### ✅ Practical Takeaway: FAIR-Aligned Data Lifecycle for AI & HPC
+
+
+>[!tip] ### ✅ Practical Takeaway: FAIR-Aligned Data Lifecycle for AI & HPC
 >
 > This checklist lets you quickly assess whether deeper reading is relevant for your organization.
 >
@@ -37,48 +37,4 @@ nav_order: 6
 > If most answers are yes, your lifecycle is FAIR-aligned and ready to support scalable AI and HPC workloads.
 
 
-
-## 3.1 What FAIR Data Means in a Business & HPC Context
-
-> [!note]
->### 💡 Key takeaways
->
->- **FAIR data** is structured, documented, and machine-actionable.
->- **FAIR does not mean open.** Proprietary and confidential data can be FAIR.
->- FAIR supports automation, scalability, reproducibility, and efficient compute use.
-
-In a business and high‑performance computing (HPC) environment, **FAIR data** refers to data that is Findable, Accessible, Interoperable, and Reusable—in practice meaning that data is
-
-- **well‑structured,**
-- **consistently documented, and**
-- **machine‑actionable.**
-
-FAIR focuses on metadata quality, persistent identifiers, clear licensing, and standardized formats so that both humans and algorithms can understand and process the data without manual intervention. For companies, this translates into reduced friction in analytics workflows and smoother integration of data across teams, tools, and systems.
-
-Importantly, **FAIR does not mean “open".** Most industrial data is proprietary or confidential, yet still benefits from FAIR practices. Internally FAIR‑aligned datasets are easier to find, understand, and reuse, while remaining protected through controlled access. The same principles also help organizations efficiently discover and evaluate external or shared datasets when relevant. Making data FAIR improves its internal usability while fully respecting commercial, ethical, or regulatory constraints.
-
-
-## 3.2 Key FAIR Principles for Industry
-
-### 3.2.1 Findable
-### 3.2.2 Accessible
-### 3.2.3 Interoperable
-### 3.2.4 Reusable
-
-## 3.3 Core Components of Industrial Data Lifecycle
-
-### 3.3.1 Planning & Requirements
-### 3.3.2 Collection & Ingestion
-### 3.3.3 Storage & Access
-### 3.3.4 Processing & Quality Control
-### 3.3.5 Documentation & Metadata
-### 3.3.6 Preservation & Retention
-### 3.3.7 Reuse & Sharing
-
-## 3.4 Tools & Enablers for FAIR-Aligned Data Management
-
-### 3.4.1 Data Catalogs
-### 3.4.2 Metadata Schemas, Controlled Vocabularies & Ontologies
-### 3.4.3 Persistent Identifiers (PIDs)
-### 3.4.4 Knowledge Graphs
 
