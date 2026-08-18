@@ -2,7 +2,7 @@
 title: "2. AI ready data ......"
 parent: "2. AI-ready data"
 nav_order: 1
---
+---
 
 # 2.1 What AI-Ready Data Means in Practice
 
