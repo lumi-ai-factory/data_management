@@ -5,13 +5,13 @@ nav_order: 6
 
 # 3. From data to scalable AI - FAIR‑aligned data lifecycle management for AI & HPC
 
- ## **Section at a glance**
+ ## Section at a glance
 
 The first part provides a high-level overview, risks, and practical checks for decision-makers and readers skimming for relevance. The rest of the section goes into detail for teams designing or operating AI and HPC data workflows.
 
 This section explains how managing data **across its full lifecycle** enables reliable, scalable AI and HPC workflows. It shows how planning, collection, storage, processing, documentation, preservation, and reuse are interconnected and how problems in one stage quickly affect the rest. The aim is to make data **FAIR-aligned and AI-ready**, so that expensive compute resources are used efficiently and results remain reproducible and reusable.
 
->[!warning]### ⚠️ Costs and risks when data is poorly managed
+>[!warning] ⚠️ Costs and risks when data is poorly managed
 >
 >- **No planning:** Data does not meet AI or HPC requirements, leading to costly re-runs.
 >- **No validation or standards:** Poor-quality data reaches workflows and wastes compute.
@@ -21,7 +21,7 @@ This section explains how managing data **across its full lifecycle** enables re
 >- **No retention or reuse strategy:** Storage costs rise and teams rebuild datasets from scratch.
 
 
->[!tip] ### ✅ Practical Takeaway: FAIR-Aligned Data Lifecycle for AI & HPC
+>[!tip] ✅ Practical Takeaway: FAIR-Aligned Data Lifecycle for AI & HPC
 >
 > This checklist lets you quickly assess whether deeper reading is relevant for your organization.
 >
