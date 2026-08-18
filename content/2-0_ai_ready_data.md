@@ -3,21 +3,21 @@ title: "2. AI-ready data"
 nav_order: 5
 ---
 
-# 3. From data to scalable AI - FAIR‑aligned data lifecycle management for AI & HPC
+# 2. AI-ready data
 
  ## 📌 Section at a glance
 
-This section defines what it means for data to be *AI‑ready* in scalable AI and HPC environments. Start with the overview, risks, and checklist for a quick assessment, then read the subsections for a deeper explanation of the data characteristics that matter at scale.
+This section defines what it means for data to be **AI‑ready** in scalable AI and HPC environments. Start with the overview, risks, and checklist for a quick assessment, then read the subsections for a deeper explanation of the data characteristics that matter at scale.
 
-This section focuses on *AI‑ready data from a data perspective* in industrial AI and HPC environments such as LUMI AI Factory. It explains the concrete properties of the data itself including structure, quality, metadata, versioning, accessibility, and bias awareness that determine whether AI workflows can run reliably, repeatedly, and at scale.
+This section focuses on **AI‑ready data from a data perspective** in industrial AI and HPC environments such as LUMI AI Factory. It explains the concrete properties of the data itself including structure, quality, metadata, versioning, accessibility, and bias awareness that determine whether AI workflows can run reliably, repeatedly, and at scale.
 
 In practice, these data properties are closely tied to how data is produced and maintained within industrial systems and workflows (e.g. ERP, PLM, MES, and sensor pipelines), not only to the datasets themselves.
 
-AI‑ready data is not just clean data. It is data that AI and HPC pipelines can *consume automatically*, without repeated manual preparation or reinterpretation. As workloads scale onto GPUs and high‑performance computing systems, these data properties directly affect model performance, reproducibility, operational friction, and compute cost.
+AI‑ready data is not just clean data. It is data that AI and HPC pipelines can **consume automatically**, without repeated manual preparation or reinterpretation. As workloads scale onto GPUs and high‑performance computing systems, these data properties directly affect model performance, reproducibility, operational friction, and compute cost.
 
 In industrial settings, clean data enables automation because it remains consistent, accurate, and machine-readable as it flows across lifecycle stages, from design and production to operation, and between interconnected systems.
 
-The goal of this section is to help teams recognize whether their data is ready *before* committing expensive GPU or HPC resources.
+The goal of this section is to help teams recognize whether their data is ready **before** committing expensive GPU or HPC resources.
 
 
 >[!warning] ⚠️ Costs and risks when data is not AI‑ready
