@@ -1,9 +1,9 @@
 ---
-title: "3. From Data to Scalable AI"
+title: "3. From data to scalable AI"
 nav_order: 6
 ---
 
-# 3. From Data to Scalable AI - FAIR‑Aligned Data Lifecycle Management for AI & HPC
+# 3. From data to scalable AI - FAIR‑aligned data lifecycle management for AI & HPC
 
 > [!tip]
 > ## **Section at a glance**
