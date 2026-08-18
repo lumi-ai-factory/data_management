@@ -1,5 +1,5 @@
 ---
-title: "3.2 Core components of industrial data lifecycle"
+title: "3.2 Industrial data lifecycle"
 parent: "3. From data to scalable AI"
 nav_order: 2
 ---
