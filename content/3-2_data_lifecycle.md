@@ -13,11 +13,3 @@ nav_order: 2
 ### 3.2.5 Documentation & metadata
 ### 3.2.6 Preservation & retention
 ### 3.2.7 Reuse & sharing
-
-## 3.3 Tools & enablers for FAIR-aligned data management
-
-### 3.3.1 Data catalogs
-### 3.3.2 Metadata schemas, controlled vocabularies & ontologies
-### 3.3.3 Persistent Identifiers (PIDs)
-### 3.3.4 Knowledge graphs
-
