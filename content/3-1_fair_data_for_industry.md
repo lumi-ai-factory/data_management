@@ -6,14 +6,13 @@ nav_order: 1
 
 ## 3.1.1 What FAIR Data Means in a Business & HPC Context
 
-> [!note]
->### 💡 Key takeaways
+> [!note] 💡 **Key takeaways**
 >
->- **FAIR data** is structured, documented, and machine-actionable.
->- **FAIR does not mean open.** Proprietary and confidential data can be FAIR.
+>- FAIR data is structured, documented, and machine-actionable.
+>- FAIR does not mean open. Proprietary and confidential data can be FAIR.
 >- FAIR supports automation, scalability, reproducibility, and efficient compute use.
 
-In a business and high‑performance computing (HPC) environment, **FAIR data** refers to data that is Findable, Accessible, Interoperable, and Reusable—in practice meaning that data is
+In a business and high‑performance computing (HPC) environment, FAIR data refers to data that is Findable, Accessible, Interoperable, and Reusable—in practice meaning that data is
 
 - **well‑structured,**
 - **consistently documented, and**
@@ -26,7 +25,7 @@ Importantly, **FAIR does not mean “open".** Most industrial data is proprietar
 
 ## 3.1.2 Key FAIR Principles for Industry
 
->[note!] Key takeaways
+>[!note] 💡**Key takeaways**
 >
 >FAIR in industry means making data structured, documented, and machine‑actionable so it can flow reliably through AI and HPC workflows.
 >
@@ -49,15 +48,15 @@ Findable means datasets can be reliably located by people and automated AI/HPC w
 - Metadata based on shared schemas or graph‑based structures
 - Explicit focus on internal discoverability across teams and tools
 
-✅**Practical examples**
-
-To make industrial and HPC datasets findable in practice, organizations can:
-
-- Assign version‑specific persistent identifiers (PIDs) to simulation outputs or model‑training datasets, so teams can always retrieve the exact dataset used in previous experiments.
-- Maintain a searchable internal data catalog that indexes large datasets such as multilingual text corpora, material‑science results, sensor logs, or image collections.
-- Use metadata that supports filtering and targeted discovery, enabling engineers to quickly locate subsets based on attributes like language, document type, simulation parameters, or dataset version.
-- Apply knowledge‑graph‑backed metadata to link related datasets, experiments, model versions, and documentation, making relationships explicit and machine‑actionable.
-- Ensure discoverability across the entire workflow, so large, complex datasets—from images and simulations to quantum‑circuit data and robotics logs—remain traceable and understandable throughout their lifecycle.
+>[!tip]✅**Practical examples**
+>
+>To make industrial and HPC datasets findable in practice, organizations can:
+>
+>- Assign version‑specific persistent identifiers (PIDs) to simulation outputs or model‑training datasets, so teams can always retrieve the exact dataset used in previous experiments.
+>- Maintain a searchable internal data catalog that indexes large datasets such as multilingual text corpora, material‑science results, sensor logs, or image collections.
+>- Use metadata that supports filtering and targeted discovery, enabling engineers to quickly locate subsets based on attributes like language, document type, simulation parameters, or dataset version.
+>- Apply knowledge‑graph‑backed metadata to link related datasets, experiments, model versions, and documentation, making relationships explicit and machine‑actionable.
+>- Ensure discoverability across the entire workflow, so large, complex datasets—from images and simulations to quantum‑circuit data and robotics logs—remain traceable and understandable throughout their lifecycle.
 
 ### Accessible
 
