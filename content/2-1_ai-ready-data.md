@@ -102,7 +102,7 @@ Metadata is therefore not an add‑on. It is one of the defining characteristics
 
 ## 2.4 When AI-ready data meets real AI and HPC workflows
 
-> [!tips] 💡 Key takeaways
+> [!tip] 💡 Key takeaways
 >
 > - AI readiness depends on whether AI‑ready data can be used in real workflows at scale.
 > - Good data alone is not enough if it cannot flow reliably and automatically into AI pipelines.
