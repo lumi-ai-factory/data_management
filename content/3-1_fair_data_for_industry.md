@@ -68,15 +68,15 @@ Accessibility means that once data has been found, it can be retrieved under cle
 - Machine or service accounts for AI and HPC jobs
 - Clear access rules recorded in metadata
 
-✅**Practical examples**
-
-To make industrial and HPC datasets accessible in practice, organizations can:
-
-- Expose datasets through authenticated API endpoints, so AI training pipelines or HPC jobs can retrieve data automatically rather than relying on manual file transfers.
-- Store robotics or simulation logs in secure object stores where workflows authenticate using machine or service credentials instead of personal user accounts.
-- Apply consistent access patterns across all datasets, so internal corpora, restricted legal texts, and partner‑licensed materials are all retrieved through the same documented interface.
-- Provide clear access rules in the metadata, ensuring systems and users understand who may access the data and under what conditions.
-- Standardize access mechanisms for all HPC workflows, enabling large‑scale jobs to pull data reliably and securely regardless of data type or sensitivity.
+>[!tip]✅**Practical examples**
+>
+>To make industrial and HPC datasets accessible in practice, organizations can:
+>
+>- Expose datasets through authenticated API endpoints, so AI training pipelines or HPC jobs can retrieve data automatically rather than relying on manual file transfers.
+>- Store robotics or simulation logs in secure object stores where workflows authenticate using machine or service credentials instead of personal user accounts.
+>- Apply consistent access patterns across all datasets, so internal corpora, restricted legal texts, and partner‑licensed materials are all retrieved through the same documented interface.
+>- Provide clear access rules in the metadata, ensuring systems and users understand who may access the data and under what conditions.
+>- Standardize access mechanisms for all HPC workflows, enabling large‑scale jobs to pull data reliably and securely regardless of data type or sensitivity.
 
 Together, these practices ensure reliable, secure, and automated data access for demanding industrial AI and HPC workloads.
 
@@ -90,15 +90,15 @@ Interoperable means that data can flow seamlessly between different tools, platf
 - Common schemas, naming conventions
 - Shared vocabularies, taxonomies and ontologies
 
-✅**Practical examples**
-
-To make industrial and HPC datasets interoperable in practice, organizations can:
-
-- Use well‑established technical formats (such as HDF5, NetCDF, or Parquet) so simulation results or sensor data can be used by different tools without conversion.
-- Adopt shared schemas and naming conventions across teams, preventing mismatches in how variables, units, or attributes are described.
-- Apply consistent vocabularies, taxonomies, or ontologies so terms like “temperature,” “defect type,” or “control signal” mean the same thing across systems and partners.
-- Ensure data can move between tools from different vendors without losing meaning or structure, avoiding proprietary lock‑in and reducing integration friction.
-- Design HPC and AI workflows around common data structures, enabling automated chaining of simulation outputs, preprocessing steps, and training runs.
+>[!tip]✅**Practical examples**
+>
+>To make industrial and HPC datasets interoperable in practice, organizations can:
+>
+>- Use well‑established technical formats (such as HDF5, NetCDF, or Parquet) so simulation results or sensor data can be used by different tools without conversion.
+>- Adopt shared schemas and naming conventions across teams, preventing mismatches in how variables, units, or attributes are described.
+>- Apply consistent vocabularies, taxonomies, or ontologies so terms like “temperature,” “defect type,” or “control signal” mean the same thing across systems and partners.
+>- Ensure data can move between tools from different vendors without losing meaning or structure, avoiding proprietary lock‑in and reducing integration friction.
+>- Design HPC and AI workflows around common data structures, enabling automated chaining of simulation outputs, preprocessing steps, and training runs.
 
 ### Reusable
 
@@ -111,12 +111,12 @@ Reusable means that data is prepared so it can be reliably used again for new mo
 - Quality indicators and known limitations
 - Dataset and model versioning
 
-✅**Practical examples**
-
-To make industrial and HPC datasets reusable in practice, organizations can:
-
-- Record provenance information describing how data was generated, processed, and validated so future teams can understand and trust it.
-- Specify clear licensing or internal usage rules, ensuring engineers know under what conditions data can be reused in new models or workflows.
-- Include quality indicators (e.g., completeness, validation status, known limitations) so teams can judge whether a dataset fits a new purpose.
-- Version datasets and models consistently, so users can trace exactly which version was used in past training runs, simulations, or deployments.
-- Use community‑ or industry‑endorsed standards for formats and metadata, making it easier to reuse datasets across teams, tools, and long-term projects.
+>[!tip]✅**Practical examples**
+>
+>To make industrial and HPC datasets reusable in practice, organizations can:
+>
+>- Record provenance information describing how data was generated, processed, and validated so future teams can understand and trust it.
+>- Specify clear licensing or internal usage rules, ensuring engineers know under what conditions data can be reused in new models or workflows.
+>- Include quality indicators (e.g., completeness, validation status, known limitations) so teams can judge whether a dataset fits a new purpose.
+>- Version datasets and models consistently, so users can trace exactly which version was used in past training runs, simulations, or deployments.
+>- Use community‑ or industry‑endorsed standards for formats and metadata, making it easier to reuse datasets across teams, tools, and long-term projects.
