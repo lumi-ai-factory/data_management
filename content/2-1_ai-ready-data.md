@@ -4,7 +4,7 @@ parent: "2. AI-ready data"
 nav_order: 1
 ---
 
-# 2.1 What AI-Ready Data Means in Practice
+## 2.1 What AI-ready data means in practice
 
 > [!TIP] ✅ Key takeaways
 >
@@ -34,7 +34,7 @@ For example, a manufacturing company training a predictive maintenance model may
 > - **AI‑ready data** refers to the properties of the data itself: What must be true about datasets before AI and HPC workflows can work reliably.
 > - **AI readiness** refers to organizational preparedness (systems, skills, governance) and is discussed elsewhere in the course.
 
-## 2.1.1 Industrial Data
+### 2.1.1 Industrial data
 
 Many high‑value industrial AI use cases rely on structured data such as **BOMs (Bills of Materials), part hierarchies, procurement data, and ERP/PLM (Enterprise Resource Planning  and Product Lifecycle Management) workflows**. While this data is well suited for operational systems, it is not AI‑ready by default. While for example ERP and PLM systems rely on relational structures, identifiers, and predefined logic, AI models require representations that allow them to detect patterns, relationships, and similarities computationally.
 
@@ -42,7 +42,7 @@ The key challenge is that meaning in industrial data lies in relationships and p
 
 TABLE HERE
 
-# 2.2 Core Characteristics of AI-Ready Data
+## 2.2 Core characteristics of AI-ready data
 
 > [!TIP] Key takeaways
 >
@@ -56,7 +56,7 @@ Instead, it is best understood as a **combination of practical data characterist
 
 The elements below describe **what must be true about the data itself** before AI pipelines can run predictably in industrial and high‑performance computing environments.
 
-## 2.2.1 Characteristics of AI-Ready Data (Industry & HPC Context)
+### 2.2.1 Characteristics of AI-ready data (Industry & HPC Context)
 
 TABLE HERE
 
@@ -76,7 +76,7 @@ Together, these elements distinguish AI‑ready data from data that is merely av
 
 When these signals are present, data is not just available, it is ready to support repeatable, scalable AI and HPC workflows.
 
-# 2.3 Why Metadata Is Essential for AI-Ready Data
+## 2.3 Why metadata is essential for AI-ready data
 
 > [!TIP] Key takeaways
 >
@@ -100,4 +100,29 @@ what limitations or assumptions apply
 under what conditions the data may be used
 Metadata is therefore not an add‑on. It is one of the defining characteristics that makes data AI‑ready.
 
-# 2.4 When AI-Ready Data Meets Real AI and HPC Workflows
+## 2.4 When AI-ready data meets real AI and HPC workflows
+
+>[!tips] 💡 Key takeaways
+>
+> - AI readiness depends on whether AI‑ready data can be used in real workflows at scale.
+> - Good data alone is not enough if it cannot flow reliably and automatically into AI pipelines.
+> - Readiness issues often appear only when automation, parallelism, and compute scale.
+> - Data readiness is a practical, operational condition—not an abstract maturity label.
+
+
+AI‑ready data describes **what must be true about the data itself:** its structure, quality, metadata, versioning, accessibility, and bias awareness.
+AI readiness, by contrast, describes whether an organization can **use that data effectively** in real AI and HPC workflows.
+
+In practice, many organizations have data that meets basic quality requirements but still struggle to scale AI beyond pilots. The bottleneck is often not the model or compute environment, but the ability to move data **reliably, repeatedly, and automatically** into training, validation, and inference workflows.
+
+As AI workloads scale onto GPUs and HPC systems, small gaps in data readiness become visible. Data that requires manual handling, ad‑hoc fixes, or human interpretation at each step quickly blocks automation and efficient compute use.
+
+###2.4.1 What “data readiness” looks like in real AI & HPC workflows
+
+In LUMI‑type AI Factory environments, these differences surface quickly. Simulation data may not be reusable because preprocessing steps were not documented. Image or video datasets may need re‑encoding before every training run. Large text corpora may exist on shared storage but be difficult to discover or access at scale. Pipelines that work sequentially often fail when thousands of parallel workers expect consistent inputs.
+
+When data is AI‑ready, workflows behave differently. Training and simulation runs become repeatable, datasets can be reused with limited extra effort, and scaling compute reveals fewer surprises rather than new failure modes.
+
+Artificial intelligence creates sustained value only when organizations are prepared to support it. AI readiness is not just about adopting new technology. It reflects a shift in how data is treated in everyday work. AI‑ready data does not emerge by accident; it is built through consistent practices and attention to how data behaves in real workflows.
+
+For organizations using AI and HPC, data readiness often marks the difference between isolated experimentation and scalable industrial adoption. How this readiness is built and maintained through lifecycle practices, automation, and tooling is addressed in Section 3.
