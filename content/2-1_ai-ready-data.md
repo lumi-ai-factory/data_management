@@ -1,5 +1,5 @@
 ---
-title: "2. AI ready data ......"
+title: "2. AI ready data in practice"
 parent: "2. AI-ready data"
 nav_order: 1
 ---
@@ -93,11 +93,12 @@ Without clear metadata, an AI model may misinterpret the data and produce unsafe
 
 For AI‑ready data, metadata provides the context needed to interpret and trust data at scale. This typically includes information about:
 
-where the data comes from
-when and how it was collected
-how it has been processed or transformed
-what limitations or assumptions apply
-under what conditions the data may be used
+- where the data comes from
+- when and how it was collected
+- how it has been processed or transformed
+- what limitations or assumptions apply
+- under what conditions the data may be used
+
 Metadata is therefore not an add‑on. It is one of the defining characteristics that makes data AI‑ready.
 
 ## 2.4 When AI-ready data meets real AI and HPC workflows
