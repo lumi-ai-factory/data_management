@@ -6,7 +6,7 @@ nav_order: 2
 # 1.2 Governance, Trust, and Scalable AI
 ## 1.2.1 Ethical and Responsible Use of Data
 
-> [!note] 💡 **Key takeaways**
+> [!TIP] 💡 **Key takeaways**
 >
 >- Data management enables AI and HPC to deliver business value at scale.
 >- Data becomes a business asset only when it is trustworthy, documented, and reusable.
