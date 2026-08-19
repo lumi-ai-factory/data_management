@@ -72,4 +72,39 @@ While general schemas and vocabularies define structure and meaning, some semant
 Together with metadata schemas, vocabularies, and ontologies, these standards ensure that meaning, provenance, and usage conditions travel with the data. This reduces manual interpretation, strengthens governance, and supports scalable, trustworthy AI and HPC workflows in highly automated environments.
 
 ### 3.3.3 Persistent Identifiers (PIDs)
+
+Persistent identifiers (PIDs) provide stable, long‑term identities for datasets, models, and versions, enabling teams to trace exactly which inputs were used in specific simulations or training runs. They help prevent confusion between dataset versions and make it easier to manage large, evolving data assets. In industrial AI and HPC workflows, PIDs are essential for reproducibility, auditability, and long‑term traceability, especially when results must be verified months or years later.
+
+In practice, what matters is that identifiers are globally unique, resolvable, and persistent over time, even as storage locations or infrastructures change.
+
+**PID examples**
+
+- **DOIs (Digital Object Identifiers)** for datasets, simulation outputs, or benchmark data. Widely used for long‑term identification and citation of datasets.
+🔗 https://www.doi.org
+🔗 https://datacite.org
+- **Handle identifiers** for internal or restricted datasets. Commonly used in enterprise and research infrastructures.
+🔗 https://handle.net
+- **Model or dataset version identifiers** embedded in ML workflows. Used to trace which exact version of data or model was used in training or inference (e.g. dataset‑v1.2.3, model‑hash‑ID)
+- **Software Heritage identifiers (SWHIDs)** for code tied to data processing and training. Useful for linking datasets to the exact code used to generate or transform them.
+🔗 https://www.softwareheritage.org
+- **Internal PID systems**
+
+Many organizations use internal resolvable identifiers (often backed by catalog or metadata systems) for proprietary data while keeping them FAIR‑aligned.
+
+Using PIDs consistently ensures that teams can confidently revisit past experiments, understand dependencies between data, models, and code, and maintain a clear chain of custody across the data lifecycle without relying on fragile file paths or ad‑hoc naming conventions.
+
 ### 3.3.4 Knowledge graphs
+
+Knowledge graphs connect datasets, models, processes, metadata, and documentation into a unified network of relationships. They make dependencies explicit such as which dataset feeds which model, how data versions relate to experiments, or which preprocessing steps were applied helping teams navigate complex AI and HPC data landscapes. Knowledge graphs also enable richer discovery, allowing users and systems to find related data even when terminology or labels differ between teams.
+
+By capturing relationships explicitly, knowledge graphs help prevent silos and improve semantic consistency across the organization. This supports better decision‑making, smoother collaboration, and more reliable automated pipelines in large industrial AI and HPC environments, where understanding dependencies is critical for reproducibility, governance, and scalable operations.
+
+> [!TIP] ✅ Practical tips
+>
+> - Use a graph‑based representation to explicitly link datasets, preprocessing steps, models, and results.
+> - Capture relationships such as dataset → transformation → model → output to improve traceability.
+> - Build knowledge graphs incrementally by reusing existing metadata from catalogs, workflows, and versioning systems.
+> - Use semantic structures to support richer search and navigation across complex data landscapes.
+> - Leverage knowledge graphs to support governance, impact analysis, and reproducibility in large‑scale AI and HPC workflows.
+
+Open‑source technologies commonly used to build knowledge graphs include graph databases and semantic‑web frameworks such as Neo4j, JanusGraph, RDF stores, and related tooling.
