@@ -18,25 +18,25 @@ This section explains how weak data practices directly affect AI performance, HP
 
 >[!tip] ✅ Practical takeaway: Why data management matters
 > Use this checklist to quickly assess whether your organization is set up to get real value from AI and HPC, or whether data >management gaps are increasing cost and risk.   
->### Strategic relevance
-> -1. Do we treat data as a long-term business asset, not just project output?
-> -2. Is data management recognized as an operational and ongoing capability, not a one-time initiative?
-> -3. Are AI and HPC investments explicitly linked to data quality, reuse, and governance?
+> ### Strategic relevance
+> -Do we treat data as a long-term business asset, not just project output?
+> -Is data management recognized as an operational and ongoing capability, not a one-time initiative?
+> -Are AI and HPC investments explicitly linked to data quality, reuse, and governance?
 
 >### Cost, efficiency, and scale
-> - 1. Do we avoid repeated data rebuilding and unnecessary recomputation?
-> - 2. Can we reuse datasets across teams, projects, and model versions?
-> - 3. Are expensive GPU and HPC resources used for innovation rather than data cleanup?
+> – Do we avoid repeated data rebuilding and unnecessary recomputation?
+> – Can we reuse datasets across teams, projects, and model versions?
+> - Are expensive GPU and HPC resources used for innovation rather than data cleanup?
 
 >### Risk, trust, and compliance
-> - 1. Can we explain where our data comes from and how it has been processed?
-> - 2. Is our data handling robust enough to support audits, certifications, or safety reviews?
-> - 3. Do we have sufficient traceability to trust automated or AI-driven decisions?
+> - Can we explain where our data comes from and how it has been processed?
+> - Is our data handling robust enough to support audits, certifications, or safety reviews?
+> - Do we have sufficient traceability to trust automated or AI-driven decisions?
 
 >### Workflow reliability
-> - 1. Are training, testing, validation, and simulation datasets clearly versioned and documented?
-> - 2. Can results be reproduced weeks or months later by others?
-> - 3. Do data issues surface early, before large-scale training or simulation runs?
+> -  Are training, testing, validation, and simulation datasets clearly versioned and documented?
+> - Can results be reproduced weeks or months later by others?
+> - Do data issues surface early, before large-scale training or simulation runs?
 
 > If several boxes remain unchecked, your organization is likely paying hidden costs in:
 > -- wasted compute
