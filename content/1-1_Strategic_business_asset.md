@@ -6,7 +6,7 @@ nav_order: 1
 # 1.1 Data as a strategic business asset
 ## 1.1.1 Data management as a business capability
 
-> [!note] 💡 **Key takeaways**
+> [!TIP] 💡 **Key takeaways** 
 >
 >- Data management enables AI and HPC to deliver business value at scale.
 >- Data becomes a business asset only when it is trustworthy, documented, and reusable.
