@@ -4,7 +4,7 @@ parent: "3. From data to scalable AI"
 nav_order: 3
 ---
 
-## 3.3 Tools & enablers for FAIR-aligned data management
+# 3.3 Tools & enablers for FAIR-aligned data management
 
 > [!NOTE] 💡 Key takeaways
 >
@@ -16,7 +16,7 @@ nav_order: 3
 
 Together, these tools turn FAIR‑aligned principles into **operational capabilities** that support scalable, automated, and trustworthy AI and HPC workflows.
 
-### 3.3.1 Data catalogs
+## 3.3.1 Data catalogs
 
 Data catalogs act as a central inventory for datasets, models, and documentation across an organization. They help teams discover existing assets, understand lineage and ownership, and avoid duplicating effort. Catalogs also improve transparency by showing how data connects to ongoing projects and how it is used across teams.
 
@@ -24,7 +24,7 @@ Examples of open‑source data catalog solutions include Amundsen, DataHub, and 
 
 Catalogs can integrate with APIs so AI and HPC pipelines can query metadata automatically and retrieve the correct datasets without manual intervention. In large industrial environments, a data catalog often becomes the *navigation layer* that anchors efficient data discovery, reuse, and governance across AI and HPC workflows.
 
-### 3.3.2 Metadata schemas, controlled vocabularies & ontologies
+## 3.3.2 Metadata schemas, controlled vocabularies & ontologies
 
 Metadata schemas, controlled vocabularies, and ontologies ensure that datasets are described and interpreted consistently across tools and teams. Schemas define how data is structured, while vocabularies and ontologies define the meaning of key terms, providing semantic clarity across workflows. This uniformity reduces integration friction, supports automation, and helps avoid costly misinterpretations.
 
@@ -71,7 +71,7 @@ While general schemas and vocabularies define structure and meaning, some semant
 
 Together with metadata schemas, vocabularies, and ontologies, these standards ensure that meaning, provenance, and usage conditions travel with the data. This reduces manual interpretation, strengthens governance, and supports scalable, trustworthy AI and HPC workflows in highly automated environments.
 
-### 3.3.3 Persistent Identifiers (PIDs)
+## 3.3.3 Persistent Identifiers (PIDs)
 
 Persistent identifiers (PIDs) provide stable, long‑term identities for datasets, models, and versions, enabling teams to trace exactly which inputs were used in specific simulations or training runs. They help prevent confusion between dataset versions and make it easier to manage large, evolving data assets. In industrial AI and HPC workflows, PIDs are essential for reproducibility, auditability, and long‑term traceability, especially when results must be verified months or years later.
 
@@ -93,7 +93,7 @@ Many organizations use internal resolvable identifiers (often backed by catalog 
 
 Using PIDs consistently ensures that teams can confidently revisit past experiments, understand dependencies between data, models, and code, and maintain a clear chain of custody across the data lifecycle without relying on fragile file paths or ad‑hoc naming conventions.
 
-### 3.3.4 Knowledge graphs
+## 3.3.4 Knowledge graphs
 
 Knowledge graphs connect datasets, models, processes, metadata, and documentation into a unified network of relationships. They make dependencies explicit such as which dataset feeds which model, how data versions relate to experiments, or which preprocessing steps were applied helping teams navigate complex AI and HPC data landscapes. Knowledge graphs also enable richer discovery, allowing users and systems to find related data even when terminology or labels differ between teams.
 
