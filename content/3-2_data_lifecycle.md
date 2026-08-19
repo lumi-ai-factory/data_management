@@ -4,7 +4,7 @@ parent: "3. From data to scalable AI"
 nav_order: 2
 ---
 
-## 3.2 Core components of industrial data lifecycle
+# 3.2 Core components of industrial data lifecycle
 
 > [!NOTE] 💡 Key takeaways
 >
@@ -22,7 +22,7 @@ nav_order: 2
 >
 > This lifecycle approach ensures industrial datasets remain high‑quality, compliant, and ready for intensive AI and HPC workloads such as those run on LUMI AI Factory.
 
-### 3.2.1 Planning & requirements
+## 3.2.1 Planning & requirements
 Industrial data lifecycles begin with clear planning. Before collecting any data, organizations need to define its purpose, expected value, stakeholders, risks, and compliance constraints. Whether data is intended for large‑scale model training, simulations, or robotics control directly influences format choices, quality requirements, access rules, and lifecycle length. Without this clarity, organizations often generate data that later proves incompatible with scalable AI or HPC workflows.
  
 **Planning should also outline the expected lifecycle**: how data will be collected, stored, processed, reused, archived, and eventually deleted, and who is responsible at each stage. Considering AI and HPC needs early, such as formats optimized for parallel access, ensures data can scale without redesign and avoids costly rework once GPU‑ or HPC‑based pipelines are already in place. Teams need to capture these decisions in a shared form so they remain visible as data moves through AI and HPC workflows.
@@ -39,7 +39,7 @@ Finally, planning clarifies the expected value of the data, whether improved mod
 > - Estimate expected data volumes and growth to ensure pipelines and storage solutions can scale to HPC workloads.
 > - Assign clear ownership or stewardship for the dataset so responsibilities remain clear as usage scales.
 
-### 3.2.2 Collection & ingestion
+## 3.2.2 Collection & ingestion
 
 Collection and ingestion translate planning decisions into operational data flows. In industrial AI and HPC environments, data often arrives at scale from diverse sources and must enter the system in **consistent, well‑defined formats** so it can move smoothly into preprocessing, training, and analysis pipelines. When format expectations or structures are unclear, ingestion becomes fragile and downstream automation quickly breaks down.
 
@@ -53,7 +53,7 @@ At scale, ingestion must be both **automated and validated**. Automated capture 
 > - Validate schemas, units, completeness, language tags, and expected value ranges at ingestion time.
 > - Block, flag, or isolate invalid data before it reaches preprocessing or training pipelines.
 
-### 3.2.3 Storage & access
+## 3.2.3 Storage & access
 
 Industrial AI and HPC workflows depend on storage architectures that balance performance, cost, and scale. In practice, this means placing frequently accessed datasets in high‑performance storage while moving less active or archival data to more cost‑efficient tiers, and ensuring data layouts support efficient parallel access so compute resources are not wasted on I/O bottlenecks. Making the **right storage choices** ensures that large AI training runs and simulations can access data efficiently without driving unnecessary storage or compute costs.
 
@@ -67,7 +67,7 @@ At HPC scale, storage and access decisions also involve **governance, security, 
 > - Use encryption and access policies to protect sensitive simulations, robotics logs, or internal corpora.
 > - Ensure data residency requirements are enforced when working across infrastructures, regions, or partners.
 
-### 3.2.4 Processing & quality control
+## 3.2.4 Processing & quality control
 
 Once data has been ingested, it must be processed into a form that AI and HPC workflows can use reliably at scale. Processing typically includes **cleaning** to remove errors or corrupt entries, **normalization** to align units, formats, or value ranges, and **enrichment** to add missing context needed for downstream analysis or training. These steps ensure that diverse industrial datasets such as simulation outputs, robotics logs, or large text corpora can be used consistently across models and workflows, **even when processed in parallel across large HPC or GPU‑based systems**.
 
@@ -81,7 +81,7 @@ At scale, processing and quality control must be implemented as **automated and 
 > - Use large‑scale preprocessing pipelines to process images, simulations, or text data in parallel.
 > - Embed automated quality checks to block unvalidated or low‑quality data from reaching expensive training or simulation stages.
 
-### 3.2.5 Documentation & metadata
+## 3.2.5 Documentation & metadata
 
 Documentation and metadata are essential for making industrial datasets usable across AI and HPC workflows. Rather than being a single lifecycle step, documentation and metadata must be created and maintained continuously as data is generated, processed, stored, and reused. At a minimum, datasets need core metadata describing their origin, purpose, structure, versions, usage conditions, and quality status so both humans and systems can interpret them correctly.
 
@@ -97,7 +97,7 @@ Documentation and metadata are also central to reproducibility. For AI and HPC w
 > - Provide documentation that is both **human‑readable and machine‑readable**, supporting engineers and automated pipelines alike.
 > - Ensure metadata is updated as data moves through preprocessing, training, archiving, and reuse.
 
-### 3.2.6 Preservation & retention
+## 3.2.6 Preservation & retention
 
 Long‑term preservation in industrial AI and HPC workflows starts with clear **retention schedules** that define how long different types of data must be kept and when they can be archived or removed. Not all data has the same value over time: simulation results, training datasets, or robotics logs may need to be retained for reproducibility, regulatory, or business reasons, while temporary preprocessing outputs can often be deleted much earlier. Defining retention rules upfront helps control storage growth, reduce cost, and maintain compliance.
 
@@ -113,7 +113,7 @@ Equally important is **secure deletion** when data is no longer needed. Sensitiv
 > - Maintain links between archived datasets and the code or configurations used with them to support long‑term reproducibility.
 > - Apply **secure deletion** procedures for data that is no longer required, including verification that data has been removed from backups or cold storage.
 
-### 3.2.7 Reuse & sharing
+## 3.2.7 Reuse & sharing
 
 Reuse and sharing in industrial AI and HPC workflows depend on making datasets predictable and consistent across teams and systems. Using **standardized schemas**, **controlled vocabularies**, and **shared domain ontologies** ensures that data retains the same meaning regardless of who uses it or where it flows. When data follows common structures and terminology, it can be integrated seamlessly into new experiments, models, or analysis pipelines without costly reinterpretation.
 
