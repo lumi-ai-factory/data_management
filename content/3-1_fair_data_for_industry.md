@@ -4,9 +4,10 @@ parent: "3. From data to scalable AI"
 nav_order: 1
 ---
 
+# 3.1 FAIR data for industry
 ## 3.1.1 What FAIR Data Means in a Business & HPC Context
 
-> [!note] 💡 **Key takeaways**
+> [!note] 💡 Key takeaways
 >
 >- FAIR data is structured, documented, and machine-actionable.
 >- FAIR does not mean open. Proprietary and confidential data can be FAIR.
@@ -25,7 +26,7 @@ Importantly, **FAIR does not mean “open".** Most industrial data is proprietar
 
 ## 3.1.2 Key FAIR Principles for Industry
 
->[!note] 💡**Key takeaways**
+>[!note] 💡Key takeaways
 >
 >FAIR in industry means making data structured, documented, and machine‑actionable so it can flow reliably through AI and HPC workflows.
 >
@@ -48,7 +49,7 @@ Findable means datasets can be reliably located by people and automated AI/HPC w
 - Metadata based on shared schemas or graph‑based structures
 - Explicit focus on internal discoverability across teams and tools
 
->[!tip]✅**Practical examples**
+>[!tip]✅ Practical examples
 >
 >To make industrial and HPC datasets findable in practice, organizations can:
 >
@@ -68,7 +69,7 @@ Accessibility means that once data has been found, it can be retrieved under cle
 - Machine or service accounts for AI and HPC jobs
 - Clear access rules recorded in metadata
 
->[!tip]✅**Practical examples**
+>[!tip]✅ Practical examples
 >
 >To make industrial and HPC datasets accessible in practice, organizations can:
 >
@@ -90,7 +91,7 @@ Interoperable means that data can flow seamlessly between different tools, platf
 - Common schemas, naming conventions
 - Shared vocabularies, taxonomies and ontologies
 
->[!tip]✅**Practical examples**
+>[!tip]✅ Practical examples
 >
 >To make industrial and HPC datasets interoperable in practice, organizations can:
 >
@@ -111,7 +112,7 @@ Reusable means that data is prepared so it can be reliably used again for new mo
 - Quality indicators and known limitations
 - Dataset and model versioning
 
->[!tip]✅**Practical examples**
+>[!tip]✅ Practical examples
 >
 >To make industrial and HPC datasets reusable in practice, organizations can:
 >
