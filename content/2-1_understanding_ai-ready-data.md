@@ -5,7 +5,6 @@ nav_order: 1
 ---
 
 # 2.1 Understanding AI-ready data
-
 ## 2.1.1 What AI-ready data means in practice
 
 > [!TIP] 💡 Key takeaways
