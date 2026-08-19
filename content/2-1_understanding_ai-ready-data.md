@@ -4,6 +4,8 @@ parent: "2. AI-ready data"
 nav_order: 1
 ---
 
+# 2.1 Understanding AI-ready data
+
 ## 2.1.1 What AI-ready data means in practice
 
 > [!TIP] 💡 Key takeaways
@@ -31,14 +33,14 @@ For example, a manufacturing company training a predictive maintenance model may
 >
 > To avoid confusion, this course uses a clear distinction:
 >
-> - **AI‑ready data** refers to the properties of the data itself: What must be true about datasets before AI and HPC workflows can work reliably.
-> - **AI readiness** refers to organizational preparedness (systems, skills, governance) and is discussed elsewhere in the course.
+> - **AI‑ready data** refers to the **properties of the data itself**: What must be true about datasets before AI and HPC workflows can work reliably.
+> - **AI readiness** refers to **organizational preparedness** (systems, skills, governance) and is discussed elsewhere in the course.
 
 ### Industrial data
 
 Many high‑value industrial AI use cases rely on structured data such as **BOMs (Bills of Materials), part hierarchies, procurement data, and ERP/PLM (Enterprise Resource Planning  and Product Lifecycle Management) workflows**. While this data is well suited for operational systems, it is not AI‑ready by default. While for example ERP and PLM systems rely on relational structures, identifiers, and predefined logic, AI models require representations that allow them to detect patterns, relationships, and similarities computationally.
 
-The key challenge is that meaning in industrial data lies in relationships and processes, not in individual fields. AI systems therefore require data to be transformed into computable representations before it can be used effectively.
+The key challenge is that **meaning in industrial data lies in relationships and processes**, not in individual fields. AI systems therefore require data to be transformed into **computable representations** before it can be used effectively.
 
 | Industrial data type | AI-ready representation | What becomes possible when AI-ready |
 |:----------------------------------|:------------------------|:------------------------------------|
@@ -63,7 +65,6 @@ Instead, it is best understood as a **combination of practical data characterist
 The elements below describe **what must be true about the data itself** before AI pipelines can run predictably in industrial and high‑performance computing environments.
 
 ### Characteristics of AI-ready data (Industry & HPC Context)
-
 | AI-ready data characteristic | What it means and why it matters | Example |
 |:-----------------------------|:---------------------------------|:--------|
 | Data quality | Data is accurate, complete, and fit for its intended AI use. Poor quality data leads to unreliable models and wasted GPU/HPC runs, because AI systems amplify data errors rather than correct them. | In robotics control data, inconsistent timestamps or missing sensor values can silently degrade model performance, even when large-scale GPU training completes successfully. |
@@ -75,7 +76,7 @@ The elements below describe **what must be true about the data itself** before A
 | Bias awareness and representativeness | Dataset composition is understood well enough to detect imbalances, gaps, or bias. AI systems learn what they are given, so hidden bias can quietly undermine results. | Visual inspection models trained on inconsistently labeled data may inherit unintended bias from annotation differences. |
 | Operational governance | Usage rules, responsibilities, and constraints are clear and embedded in daily workflows. In shared AI and HPC environments, governance prevents misuse, rework, and compliance risks. | Healthcare language models require clearly defined dataset boundaries even when training data contains no direct patient records. |
 
-Together, these elements distinguish AI‑ready data from data that is merely available. They enable AI workflows to be repeated, scaled, and trusted over time.
+Together, these **elements distinguish AI‑ready data from data that is merely available**. They enable AI workflows to be repeated, scaled, and trusted over time.
 
 > [!TIP] ✅ Practical tips: recognizing AI-ready data in practice
 >
@@ -98,8 +99,7 @@ When these signals are present, data is not just available, it is ready to suppo
 > - Metadata enables automation and repeatable AI workflows.
 > - Metadata is a prerequisite for trust, traceability, and reuse.
 
-In AI and HPC environments, metadata is not optional documentation.
-It is a core property of AI‑ready data.
+In AI and HPC environments,**metadata** is not optional documentation. It is a **core property of AI‑ready data**.
 
 AI systems cannot infer meaning on their own. Without metadata, models cannot reliably distinguish whether a value represents a customer age, a product price, or a machine temperature. As automation and compute scale increase, missing or ambiguous metadata quickly leads to failed training runs, unreliable results, or datasets that cannot be safely reused.
 
