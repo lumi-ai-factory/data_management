@@ -6,7 +6,7 @@ nav_order: 1
 
 ## 2.1.1 What AI-ready data means in practice
 
-> [!TIP] ✅ Key takeaways
+> [!TIP] 💡 Key takeaways
 >
 > - AI-ready data can be used reliably, repeatedly, and at scale by AI and HPC workflows.
 > - It is not just clean data, but structured, consistent, and documented.
