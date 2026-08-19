@@ -22,7 +22,6 @@ In practice, many organizations have data that meets basic quality requirements 
 As AI workloads scale onto GPUs and HPC systems, small gaps in data readiness become visible. Data that requires manual handling, ad‑hoc fixes, or human interpretation at each step quickly blocks automation and efficient compute use.
 
 ### What “data readiness” looks like in real AI & HPC workflows
-
 | If data is not ready      | What happens at scale                          | If data is ready                         |
 |:--------------------------|:-----------------------------------------------|:-----------------------------------------|
 | Manual preprocessing      | Engineers fix data instead of improving models | Automated, repeatable pipelines          |
