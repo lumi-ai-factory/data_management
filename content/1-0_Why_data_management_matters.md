@@ -33,10 +33,11 @@ This section explains how weak data practices directly affect AI performance, HP
 > - Is our data handling robust enough to support audits, certifications, or safety reviews?
 > - Do we have sufficient traceability to trust automated or AI-driven decisions?
 >
-> ### Workflow reliability
->– Are training, testing, validation, and simulation datasets clearly versioned and documented?
-> – Can results be reproduced weeks or months later by others?
-> – Do data issues surface early, before large-scale training or simulation runs?
+>> ### Workflow reliability
+> - Are training, testing, validation, and simulation datasets clearly versioned and documented?
+> - Can results be reproduced weeks or months later by others?
+> - Do data issues surface early, before large-scale training or simulation runs?
+>   
 >
 > If several boxes remain unchecked, your organization is likely paying hidden costs in:
 > - wasted compute
