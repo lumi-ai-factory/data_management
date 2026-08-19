@@ -52,11 +52,11 @@ By adopting shared schemas and semantic standards, organizations ensure that AI 
 > - **BioPortal** — Even though it is biomedical‑focused, it is a popular place to explore ontology structures and find domain‑specific controlled vocabularies.
 > 🔗 https://bioportal.bioontology.org
 > - **Industry‑specific standards bodies** (choose depending on the domain):
->  - **OPC Foundation** (automation, robotics, industrial IoT)
+>     **OPC Foundation** (automation, robotics, industrial IoT)
 >   🔗 https://opcfoundation.org
->   - **OASIS** (information models, data exchange)
+>     **OASIS** (information models, data exchange)
 >   🔗 https://www.oasis-open.org
->   - **ISO/TC committees** (materials, manufacturing, geospatial, etc.)
+>     **ISO/TC committees** (materials, manufacturing, geospatial, etc.)
 
 **Semantic standards for automated workflows**
 
