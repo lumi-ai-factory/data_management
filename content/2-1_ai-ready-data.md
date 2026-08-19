@@ -40,7 +40,13 @@ Many high‑value industrial AI use cases rely on structured data such as **BOMs
 
 The key challenge is that meaning in industrial data lies in relationships and processes, not in individual fields. AI systems therefore require data to be transformed into computable representations before it can be used effectively.
 
-TABLE HERE
+| Industrial data type | AI-ready representation | What becomes possible when AI-ready |
+|:----------------------------------|:------------------------|:------------------------------------|
+| BOMs / Part hierarchies | Knowledge graphs | Relationships become analyzable: dependency reasoning, impact analysis, system-level understanding |
+| Individual parts | Embeddings | Knowledge becomes searchable: similarity search, clustering, alternative/substitute identification |
+| Procurement data | Feature tables | Systems become integrated: predictive models for supplier risk, cost optimization |
+| ERP workflows | Event logs | Processes become measurable: process mining, performance analysis, bottleneck detection |
+| PLM documents & design data | RAG + embeddings | Engineering knowledge becomes accessible: contextual Q&A across lifecycle and design data |
 
 ## 2.2 Core characteristics of AI-ready data
 
