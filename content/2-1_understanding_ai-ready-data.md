@@ -49,6 +49,24 @@ The key challenge is that **meaning in industrial data lies in relationships and
 | ERP workflows | Event logs | Processes become measurable: process mining, performance analysis, bottleneck detection |
 | PLM documents & design data | RAG + embeddings | Engineering knowledge becomes accessible: contextual Q&A across lifecycle and design data |
 
+```quiz
+title: Check your understanding
+
+Q: Which statements describe AI-ready data? (select all)
+- [x] It can be used reliably, repeatedly, and at scale by AI and HPC workflows.
+- [ ] It guarantees that an organization is ready to adopt AI.
+- [x] It includes enough structure, consistency, and context to support reuse.
+> AI-ready data is data that AI and HPC workflows can use reliably and repeatedly. It requires structure, consistency, and context, but it is not the same as organizational AI readiness.
+
+---
+Q: Which statements about AI-ready data are true? (select all)
+- [ ] AI-ready data is simply clean data.
+- [x] AI-ready data refers to properties of the data itself.
+- [x] Industrial data often requires transformation before it can be used effectively by AI.
+
+> AI-ready data is more than clean data. Many industrial datasets are designed for operational systems and must be transformed into representations that AI systems can use effectively.
+```
+
 ## 2.1.2 Core characteristics of AI-ready data
 
 > [!TIP] 💡 Key takeaways
