@@ -64,8 +64,16 @@ The elements below describe **what must be true about the data itself** before A
 
 ### 2.2.1 Characteristics of AI-ready data (Industry & HPC Context)
 
-TABLE HERE
-
+| AI-ready data characteristic | What it means and why it matters | Example |
+|:-----------------------------|:---------------------------------|:--------|
+| Data quality | Data is accurate, complete, and fit for its intended AI use. Poor quality data leads to unreliable models and wasted GPU/HPC runs, because AI systems amplify data errors rather than correct them. | In robotics control data, inconsistent timestamps or missing sensor values can silently degrade model performance, even when large-scale GPU training completes successfully. |
+| Structural consistency | Data follows predictable formats, schemas, units, and conventions so AI pipelines can process it automatically. Inconsistent structure breaks automation and increases preprocessing effort at scale. | Image and video datasets collected from multiple factories must use consistent encoding and frame-rate conventions to avoid repeated preprocessing before GPU training. |
+| Context through metadata | Data includes clear information about origin, meaning, collection method, and limitations. Without context, teams and AI systems cannot judge whether data is suitable or trustworthy for reuse. | Engineering simulation outputs become reusable only when metadata records the simulation software version, configuration parameters, and physical assumptions used. |
+| Versioning and traceability | Dataset versions are clearly identified and can be linked to models, experiments, or results. This enables reproducibility, auditability, and reliable collaboration across teams and time. | When training language models on evolving multilingual corpora, dataset versioning explains why model behavior changes between training runs months apart. |
+| Accessible for automated use | Authorized systems and workflows can retrieve data securely without manual steps. AI and HPC environments depend on automated data access; manual handling does not scale. | Large text corpora stored across shared HPC file systems become unusable when teams cannot easily discover which datasets exist or what they contain. |
+| Scalability | Data structures support growing volumes, reuse, and automation without redesign. Issues that seem minor in pilots often become major cost drivers at AI and HPC scale. | Benchmark datasets that work in small experiments can fail at HPC scale when access patterns or structure are inconsistent. |
+| Bias awareness and representativeness | Dataset composition is understood well enough to detect imbalances, gaps, or bias. AI systems learn what they are given, so hidden bias can quietly undermine results. | Visual inspection models trained on inconsistently labeled data may inherit unintended bias from annotation differences. |
+| Operational governance | Usage rules, responsibilities, and constraints are clear and embedded in daily workflows. In shared AI and HPC environments, governance prevents misuse, rework, and compliance risks. | Healthcare language models require clearly defined dataset boundaries even when training data contains no direct patient records. |
 
 Together, these elements distinguish AI‑ready data from data that is merely available. They enable AI workflows to be repeated, scaled, and trusted over time.
 
