@@ -155,15 +155,6 @@ Metadata is therefore not an add‑on. It is **one of the defining characteristi
 ```quiz
 title: Check your understanding
 
-Q: A team finds a dataset containing machine temperatures, but there is no information about how the data was collected, what the measurements represent, or under which conditions they were recorded. What is the main risk?
-- [ ] The dataset cannot be stored in an HPC environment.
-- [x] The data may be misinterpreted and produce unreliable AI results.
-- [x] The dataset may be difficult to trust or reuse.
-
-> Without metadata, teams and AI systems lack the context needed to correctly interpret, trust, and reuse data.
-
----
-
 Q: Why is metadata important in AI and HPC workflows? (select all)
 - [x] It helps people and machines correctly interpret data.
 - [x] It supports trust, traceability, and reuse.
