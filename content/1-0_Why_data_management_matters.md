@@ -35,8 +35,8 @@ This section explains how weak data practices directly affect AI performance, HP
 >
 > ### Workflow reliability
 >– Are training, testing, validation, and simulation datasets clearly versioned and documented?
-> Can results be reproduced weeks or months later by others?
->Do data issues surface early, before large-scale training or simulation runs?
+> – Can results be reproduced weeks or months later by others?
+> – Do data issues surface early, before large-scale training or simulation runs?
 >
 > If several boxes remain unchecked, your organization is likely paying hidden costs in:
 > - wasted compute
