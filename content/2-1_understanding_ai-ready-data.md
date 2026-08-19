@@ -108,6 +108,26 @@ Together, these **elements distinguish AI‑ready data from data that is merely 
 
 When these signals are present, data is not just available, it is ready to support repeatable, scalable AI and HPC workflows.
 
+```quiz
+title: Check your understanding
+
+Q: Which characteristics help AI and HPC workflows scale beyond small pilot projects? (select all)
+- [x] Accessible data for automated use
+- [x] Scalability of data structures and workflows
+- [ ] Manual data preparation for each project
+
+> AI-ready data supports automation and scaling. Requiring manual preparation for every project does not scale effectively.
+
+---
+ 
+Q: Which statements about AI-ready data characteristics are true? (select all)
+- [x] Data quality is important because AI systems amplify data errors rather than correct them.
+- [ ] High-quality data alone is sufficient to make data AI-ready.
+- [x] Operational governance helps prevent misuse, rework, and compliance risks.
+
+> While data quality is essential, AI-ready data also requires characteristics such as governance, accessibility, metadata, consistency, and traceability.
+```
+
 ## 2.1.3 Why metadata is essential for AI-ready data
 
 > [!TIP] 💡 Key takeaways
