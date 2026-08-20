@@ -71,7 +71,7 @@ This ability to reuse data across teams and time is a key reason why metadata, v
 ```quiz
 title: Check your understanding
 
-Q: Which statements about data management as a business capability are true? (select all)
+Q: Which statements about data management as a business capability are true?
 - [x] Good data management helps AI and HPC deliver business value at scale.
 - [ ] Data management is mainly a compliance activity and has little impact on operational performance.
 - [x] Data management should be embedded into everyday work rather than treated as a one-time project.
@@ -79,7 +79,7 @@ Q: Which statements about data management as a business capability are true? (se
 
 ---
 
-Q: What are common consequences of weak data management? (select all)
+Q: What are common consequences of weak data management?
 - [ ] AI models become more trustworthy because teams review the data more often.
 - [x] Teams spend time fixing data issues instead of improving models.
 - [x] GPU and HPC resources may be wasted on reruns, debugging, and reprocessing.
@@ -87,7 +87,7 @@ Q: What are common consequences of weak data management? (select all)
 
 ---
 
-Q: When does data become a reusable business asset? (select all)
+Q: When does data become a reusable business asset?
 - [x] When it is trustworthy enough to support decisions.
 - [x] When it is documented, structured, and versioned for reuse.
 - [ ] When it has been collected, regardless of its quality or documentation.
