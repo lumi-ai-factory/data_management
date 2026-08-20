@@ -99,7 +99,7 @@ This is where **FAIR‑aligned practices**, findability, accessibility, interope
 ```quiz
 title: Check your understanding
 
-Q: How is trustworthy AI supported in practice? (select all)
+Q: How is trustworthy AI supported in practice?
 - [x] Through clear documentation, traceability, and accountable data management practices.
 - [ ] By relying on AI models alone to guarantee ethical and responsible outcomes.
 - [x] By making data use visible and reproducible throughout AI workflows.
@@ -107,7 +107,7 @@ Q: How is trustworthy AI supported in practice? (select all)
 
 ---
 
-Q: What risks can good data governance help prevent? (select all)
+Q: What risks can good data governance help prevent?
 - [ ] The need to document known data limitations.
 - [x] Unintended bias in training and evaluation data.
 - [x] Silent propagation of errors through automated pipelines.
@@ -115,7 +115,7 @@ Q: What risks can good data governance help prevent? (select all)
 
 ---
 
-Q: Why are FAIR-aligned data practices important for scalable AI and HPC? (select all)
+Q: Why are FAIR-aligned data practices important for scalable AI and HPC?
 - [x] They improve data discoverability, accessibility, interoperability, and reuse.
 - [x] They reduce repeated data work and support collaboration across teams.
 - [ ] They require organizations to make all data publicly available.
