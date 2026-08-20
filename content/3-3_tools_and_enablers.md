@@ -108,3 +108,29 @@ By capturing relationships explicitly, knowledge graphs help prevent silos and i
 > - Leverage knowledge graphs to support governance, impact analysis, and reproducibility in large‑scale AI and HPC workflows.
 
 Open‑source technologies commonly used to build knowledge graphs include graph databases and semantic‑web frameworks such as Neo4j, JanusGraph, RDF stores, and related tooling.
+
+```quiz
+title: Check your understanding
+
+Q: How do data catalogs support FAIR-aligned data management? (select all)
+- [x] They help teams discover and reuse existing datasets, models, and documentation.
+- [ ] They eliminate the need for metadata, documentation, and governance.
+- [x] They can support automated AI and HPC workflows through metadata and API integration.
+> Data catalogs act as a central inventory of datasets, models, and documentation. They improve discoverability, reuse, and automation while supporting governance and transparency.
+
+---
+
+Q: Why are metadata schemas, controlled vocabularies, and ontologies important? (select all)
+- [ ] They guarantee that all datasets can be shared publicly.
+- [x] They provide consistent structure and meaning across tools and teams.
+- [x] They reduce manual interpretation and support automated processing.
+> Schemas define structure, while vocabularies and ontologies define meaning. Together, they help AI and HPC systems process data consistently and reliably across workflows.
+
+---
+
+Q: What benefits do persistent identifiers (PIDs) provide? (select all)
+- [x] They help teams trace which dataset or model version was used in a specific experiment.
+- [x] They support reproducibility, auditability, and long-term traceability.
+- [ ] They depend on fixed file paths and storage locations remaining unchanged.
+> PIDs provide stable, persistent identities for datasets, models, and other digital assets, allowing them to be tracked even when storage locations or infrastructures change.
+```
