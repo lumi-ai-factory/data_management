@@ -81,7 +81,7 @@ Ethical data practices are not only about avoiding harm. They are about maintain
 
 High‑quality, accessible data allows organizations to move from reactive decisions to predictive and automated operations, while also enabling AI and HPC workloads to scale sustainably. 
 
-> [!note] LUMI Purple: Note
+> [!note]
 > In industrial environments, this supports:
 > - real‑time monitoring of complex systems
 > - predictive maintenance and anomaly detection
@@ -90,7 +90,8 @@ High‑quality, accessible data allows organizations to move from reactive decis
 >
 These capabilities depend not only on models and compute, but on consistent, well‑understood data inputs. Models and compute scale fast, but data issues scale faster. Without strong data management, automation remains fragile and AI workflows require constant supervision.
 
-> [!tip] As AI and HPC workloads grow, data must also support:
+> [!tip]
+> As AI and HPC workloads grow, data must also support:
 > - distributed processing and parallel access
 > - reproducibility across long time spans
 > - reuse across teams and projects
