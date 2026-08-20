@@ -93,3 +93,29 @@ As AI and HPC workloads grow, data must also support:
 - reuse across teams and projects
 
 This is where **FAIR‑aligned practices**, findability, accessibility, interoperability, and reusability, start to matter operationally. Applied internally, they accelerate training and simulation, improve collaboration, and reduce repeated data work, all without requiring data to be made public. (FAIR and lifecycle practices are covered in detail in Section 3.)
+
+```quiz
+title: Check your understanding
+
+Q: How is trustworthy AI supported in practice? (select all)
+- [x] Through clear documentation, traceability, and accountable data management practices.
+- [ ] By relying on AI models alone to guarantee ethical and responsible outcomes.
+- [x] By making data use visible and reproducible throughout AI workflows.
+> Trustworthy AI is not achieved through principles alone. It requires transparent, well-managed data and practices that support explainability, accountability, and reproducibility.
+
+---
+
+Q: What risks can good data governance help prevent? (select all)
+- [ ] The need to document known data limitations.
+- [x] Unintended bias in training and evaluation data.
+- [x] Silent propagation of errors through automated pipelines.
+> Many AI risks originate in data rather than models. Governance helps identify biases, prevent misuse, and ensure that limitations and quality issues remain visible.
+
+---
+
+Q: Why are FAIR-aligned data practices important for scalable AI and HPC? (select all)
+- [x] They improve data discoverability, accessibility, interoperability, and reuse.
+- [x] They reduce repeated data work and support collaboration across teams.
+- [ ] They require organizations to make all data publicly available.
+> FAIR practices help organizations scale AI and HPC workflows by making data easier to find, access, integrate, and reuse. FAIR does not mean that data must be open or public.
+```
