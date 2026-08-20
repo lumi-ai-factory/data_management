@@ -112,7 +112,7 @@ Open‑source technologies commonly used to build knowledge graphs include graph
 ```quiz
 title: Check your understanding
 
-Q: How do data catalogs support FAIR-aligned data management? (select all)
+Q: How do data catalogs support FAIR-aligned data management?
 - [x] They help teams discover and reuse existing datasets, models, and documentation.
 - [ ] They eliminate the need for metadata, documentation, and governance.
 - [x] They can support automated AI and HPC workflows through metadata and API integration.
@@ -120,7 +120,7 @@ Q: How do data catalogs support FAIR-aligned data management? (select all)
 
 ---
 
-Q: Why are metadata schemas, controlled vocabularies, and ontologies important? (select all)
+Q: Why are metadata schemas, controlled vocabularies, and ontologies important?
 - [ ] They guarantee that all datasets can be shared publicly.
 - [x] They provide consistent structure and meaning across tools and teams.
 - [x] They reduce manual interpretation and support automated processing.
@@ -128,7 +128,7 @@ Q: Why are metadata schemas, controlled vocabularies, and ontologies important? 
 
 ---
 
-Q: What benefits do persistent identifiers (PIDs) provide? (select all)
+Q: What benefits do persistent identifiers (PIDs) provide?
 - [x] They help teams trace which dataset or model version was used in a specific experiment.
 - [x] They support reproducibility, auditability, and long-term traceability.
 - [ ] They depend on fixed file paths and storage locations remaining unchanged.
