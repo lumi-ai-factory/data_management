@@ -38,3 +38,21 @@ When data is AI‑ready, workflows behave differently. Training and simulation r
 Artificial intelligence creates sustained value only when organizations are prepared to support it. AI readiness is not just about adopting new technology. It reflects a shift in how data is treated in everyday work. AI‑ready data does not emerge by accident; it is built through consistent practices and attention to how data behaves in real workflows.
 
 For organizations using AI and HPC, data readiness often marks the difference between isolated experimentation and scalable industrial adoption. How this readiness is built and maintained through lifecycle practices, automation, and tooling is addressed in **Section 3**.
+
+```quiz
+title: Check your understanding
+
+Q: Which statements describe AI readiness? (select all)
+- [x] AI readiness means data can be used reliably and automatically in real AI and HPC workflows.
+- [ ] AI readiness is achieved once data quality requirements are met.
+- [x] AI readiness reflects an organization's ability to use data effectively at scale.
+> AI readiness is not just about having high-quality data. It describes whether data can flow reliably, repeatedly, and automatically through real AI and HPC workflows at scale.
+
+---
+
+Q: Why do data readiness issues often become visible only at scale? (select all)
+- [x] Manual preprocessing and ad-hoc fixes become bottlenecks in automated workflows.
+- [ ] More GPUs automatically improve data quality problems.
+- [x] Parallel processing exposes inconsistencies that may not appear in small-scale workflows.
+> Data that works in small experiments can fail in production-scale AI and HPC environments. Automation, parallelism, and large compute resources often reveal hidden readiness issues.
+```
