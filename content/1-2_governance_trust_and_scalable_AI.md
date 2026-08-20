@@ -46,7 +46,7 @@ Clear documentation and traceability support:
 
 Responsible practice means treating AI as a support tool, not a decision‑maker, and ensuring that humans remain accountable for outcomes—particularly in safety‑critical or highly automated environments.
 
-## 1.2.2 Preventing bias, misuse, and loss of control
+## Preventing bias, misuse, and loss of control
 
 Bias and misuse rarely originate in models alone. They are often introduced earlier through data selection, preparation, and reuse. Poorly governed datasets can embed historical bias, be applied outside their original context, or be reused without understanding their limitations.
 
@@ -59,7 +59,7 @@ Good data governance helps prevent:
 
 Documenting known data limitations and keeping humans in the loop for validation are essential safeguards as AI systems scale.
 
-## 1.2.3 Data security, controlled access, and external AI tools
+## Data security, controlled access, and external AI tools
 
 Industrial AI workflows increasingly involve external or cloud‑based AI tools. Data shared with such tools may be stored, retained, or reused outside the organization’s direct control. Even when dealing with technical, simulated, or non‑personal data, security, confidentiality, and intellectual property considerations remain critical.
 
@@ -71,13 +71,13 @@ Responsible data use therefore requires:
 
 Choosing approved tools, applying anonymization where needed, and enforcing clear usage rules reduce both ethical and operational risk.
 
-## 1.2.4 Integrity, reproducibility, and long‑term trust
+## Integrity, reproducibility, and long‑term trust
 
 Responsible data practices also support scientific and operational integrity. AI‑processed data should never replace original datasets without traceability. Preserving original data versions and validating AI‑generated outputs are critical for reproducibility, safety validation, and long‑term reuse.
 
 Ethical data practices are not only about avoiding harm. They are about maintaining trust in AI systems, in automated decisions, and in the organization’s ability to operate responsibly at AI and HPC scale.
 
-## 1.2.5 Enabling Reliable Decisions and Scalable AI & HPC
+## 1.2.2 Enabling Reliable Decisions and Scalable AI & HPC
 
 High‑quality, accessible data allows organizations to move from reactive decisions to predictive and automated operations, while also enabling AI and HPC workloads to scale sustainably. In industrial environments, this supports:
 
