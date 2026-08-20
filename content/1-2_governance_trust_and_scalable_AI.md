@@ -36,11 +36,13 @@ Clear documentation and traceability support:
 - reproducibility of results
 - trust inside the organization and with external stakeholders
 
-In workflows involving HPC, automation, or generative AI, teams must be able to explain what data was used, how it was processed, and where AI tools influenced outcomes. Without this transparency, organizations risk:
 
-- “black‑box” decision‑making that cannot be validated
-- results that cannot be explained or justified later
-- unclear responsibility when systems fail or behave unexpectedly
+> [!warning] ⚠️ **Transparency**
+> In workflows involving HPC, automation, or generative AI, teams must be able to explain what data was used, how it was processed, and where AI tools influenced outcomes. Without this transparency, organizations risk:
+> - “black‑box” decision‑making that cannot be validated
+> - results that cannot be explained or justified later
+> - unclear responsibility when systems fail or behave unexpectedly
+> 
 
 Responsible practice means treating AI as a support tool, not a decision‑maker, and ensuring that humans remain accountable for outcomes—particularly in safety‑critical or highly automated environments.
 
