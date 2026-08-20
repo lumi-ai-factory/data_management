@@ -124,7 +124,7 @@ Reusable means that data is prepared so it can be reliably used again for new mo
 
 ```quiz
 title: Check your understanding
-Q: Which statements about FAIR data are true? (select all)
+Q: Which statements about FAIR data are true?
 - [x] FAIR data is structured, documented, and machine-actionable.
 - [ ] FAIR data must be publicly open and freely available.
 - [x] Proprietary and confidential business data can be FAIR.
@@ -133,7 +133,7 @@ Q: Which statements about FAIR data are true? (select all)
 
 ---
 
-Q: Which practices help make data findable? (select all)
+Q: Which practices help make data findable?
 - [x] Assigning persistent identifiers (PIDs) to datasets and versions.
 - [x] Maintaining searchable internal data catalogs.
 - [ ] Storing datasets with undocumented file names known only to their creators.
@@ -141,7 +141,7 @@ Q: Which practices help make data findable? (select all)
 
 ---
 
-Q: Which statements describe reusable data? (select all)
+Q: Which statements describe reusable data?
 - [x] It includes provenance information showing how the data was created and processed.
 - [x] It includes versioning, quality indicators, and clear usage rules.
 - [ ] It can only be reused if the original project team is available to explain it.
