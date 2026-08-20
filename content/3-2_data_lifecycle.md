@@ -132,7 +132,7 @@ In industry, reuse and sharing are typically controlled. Most datasets are share
 ```quiz
 title: Check your understanding
 
-Q: Which activities belong to the Planning & Requirements stage of the data lifecycle? (select all)
+Q: Which activities belong to the Planning & Requirements stage of the data lifecycle?
 - [x] Defining the purpose and expected value of the data.
 - [x] Identifying stakeholders, risks, and compliance requirements.
 - [ ] Delaying format and scalability decisions until GPU or HPC workflows are already in production.
@@ -140,7 +140,7 @@ Q: Which activities belong to the Planning & Requirements stage of the data life
 
 ---
 
-Q: Why is validation important during data collection and ingestion? (select all)
+Q: Why is validation important during data collection and ingestion?
 - [x] It prevents incomplete, inconsistent, or corrupted data from entering downstream workflows.
 - [x] It helps protect expensive GPU and HPC resources from being wasted on poor-quality data.
 - [ ] It eliminates the need for documentation and metadata later in the lifecycle.
@@ -148,7 +148,7 @@ Q: Why is validation important during data collection and ingestion? (select all
 
 ---
 
-Q: Which practices support long-term reuse of industrial datasets? (select all)
+Q: Which practices support long-term reuse of industrial datasets?
 - [x] Maintaining metadata, documentation, and version information.
 - [x] Providing API-based access and consistent data structures.
 - [ ] Relying on the original project team to explain the data when needed.
