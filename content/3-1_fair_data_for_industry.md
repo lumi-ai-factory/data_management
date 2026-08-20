@@ -121,3 +121,29 @@ Reusable means that data is prepared so it can be reliably used again for new mo
 >- Include quality indicators (e.g., completeness, validation status, known limitations) so teams can judge whether a dataset fits a new purpose.
 >- Version datasets and models consistently, so users can trace exactly which version was used in past training runs, simulations, or deployments.
 >- Use community‑ or industry‑endorsed standards for formats and metadata, making it easier to reuse datasets across teams, tools, and long-term projects.
+
+```quiz
+title: Check your understanding
+Q: Which statements about FAIR data are true? (select all)
+- [x] FAIR data is structured, documented, and machine-actionable.
+- [ ] FAIR data must be publicly open and freely available.
+- [x] Proprietary and confidential business data can be FAIR.
+
+> FAIR focuses on making data findable, accessible, interoperable, and reusable. Data can remain protected and restricted while still following FAIR principles.
+
+---
+
+Q: Which practices help make data findable? (select all)
+- [x] Assigning persistent identifiers (PIDs) to datasets and versions.
+- [x] Maintaining searchable internal data catalogs.
+- [ ] Storing datasets with undocumented file names known only to their creators.
+> Findable data can be reliably located by people and automated systems. Persistent identifiers, searchable catalogs, and well-defined metadata support discoverability.
+
+---
+
+Q: Which statements describe reusable data? (select all)
+- [x] It includes provenance information showing how the data was created and processed.
+- [x] It includes versioning, quality indicators, and clear usage rules.
+- [ ] It can only be reused if the original project team is available to explain it.
+> Reusable data contains enough context, documentation, and version information for future users to understand and confidently use it without relying on the original creators.
+```
