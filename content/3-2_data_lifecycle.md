@@ -128,3 +128,29 @@ In industry, reuse and sharing are typically controlled. Most datasets are share
 > - Allow AI training or HPC jobs to pull data directly into workflows using authenticated API access.
 > - Track dataset consumption across teams or projects to support governance and reproducibility.
 > - Support controlled cross‑organizational or public sharing by defining clear access rules, usage conditions, and responsibilities.
+
+```quiz
+title: Check your understanding
+
+Q: Which activities belong to the Planning & Requirements stage of the data lifecycle? (select all)
+- [x] Defining the purpose and expected value of the data.
+- [x] Identifying stakeholders, risks, and compliance requirements.
+- [ ] Delaying format and scalability decisions until GPU or HPC workflows are already in production.
+> Planning should account for future AI and HPC needs from the beginning, including formats, scalability, ownership, and lifecycle requirements.
+
+---
+
+Q: Why is validation important during data collection and ingestion? (select all)
+- [x] It prevents incomplete, inconsistent, or corrupted data from entering downstream workflows.
+- [x] It helps protect expensive GPU and HPC resources from being wasted on poor-quality data.
+- [ ] It eliminates the need for documentation and metadata later in the lifecycle.
+> Validation at ingestion catches problems early, improves trust in the data, and prevents quality issues from propagating into AI and HPC workflows.
+
+---
+
+Q: Which practices support long-term reuse of industrial datasets? (select all)
+- [x] Maintaining metadata, documentation, and version information.
+- [x] Providing API-based access and consistent data structures.
+- [ ] Relying on the original project team to explain the data when needed.
+> Effective reuse depends on well-documented, standardized, and accessible data that can be understood and integrated into new workflows without relying on the original creators.
+```
