@@ -79,20 +79,22 @@ Ethical data practices are not only about avoiding harm. They are about maintain
 
 ## 1.2.2 Enabling Reliable Decisions and Scalable AI & HPC
 
-High‑quality, accessible data allows organizations to move from reactive decisions to predictive and automated operations, while also enabling AI and HPC workloads to scale sustainably. In industrial environments, this supports:
+High‑quality, accessible data allows organizations to move from reactive decisions to predictive and automated operations, while also enabling AI and HPC workloads to scale sustainably. 
 
-- real‑time monitoring of complex systems
-- predictive maintenance and anomaly detection
-- optimization of production, energy use, or logistics
-- simulation‑driven decision support and digital twins
-
+> [!note] LUMI Purple: Note
+> In industrial environments, this supports:
+> - real‑time monitoring of complex systems
+> - predictive maintenance and anomaly detection
+> - optimization of production, energy use, or logistics
+> - simulation‑driven decision support and digital twins
+>
 These capabilities depend not only on models and compute, but on consistent, well‑understood data inputs. Models and compute scale fast, but data issues scale faster. Without strong data management, automation remains fragile and AI workflows require constant supervision.
 
-As AI and HPC workloads grow, data must also support:
-
-- distributed processing and parallel access
-- reproducibility across long time spans
-- reuse across teams and projects
+> [!tip] As AI and HPC workloads grow, data must also support:
+> - distributed processing and parallel access
+> - reproducibility across long time spans
+> - reuse across teams and projects
+>   
 
 This is where **FAIR‑aligned practices**, findability, accessibility, interoperability, and reusability, start to matter operationally. Applied internally, they accelerate training and simulation, improve collaboration, and reduce repeated data work, all without requiring data to be made public. (FAIR and lifecycle practices are covered in detail in Section 3.)
 
