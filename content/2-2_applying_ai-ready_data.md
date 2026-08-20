@@ -42,7 +42,7 @@ For organizations using AI and HPC, data readiness often marks the difference be
 ```quiz
 title: Check your understanding
 
-Q: Which statements describe AI readiness? (select all)
+Q: Which statements describe AI readiness?
 - [x] AI readiness means data can be used reliably and automatically in real AI and HPC workflows.
 - [ ] AI readiness is achieved once data quality requirements are met.
 - [x] AI readiness reflects an organization's ability to use data effectively at scale.
@@ -50,7 +50,7 @@ Q: Which statements describe AI readiness? (select all)
 
 ---
 
-Q: Why do data readiness issues often become visible only at scale? (select all)
+Q: Why do data readiness issues often become visible only at scale?
 - [x] Manual preprocessing and ad-hoc fixes become bottlenecks in automated workflows.
 - [ ] More GPUs automatically improve data quality problems.
 - [x] Parallel processing exposes inconsistencies that may not appear in small-scale workflows.
