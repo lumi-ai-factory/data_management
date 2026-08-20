@@ -25,4 +25,26 @@ Good data management works best when it becomes part of everyday work rather tha
 
 ## 1.1.2 What goes wrong when data management is weak
 
+> [!TIP] 💡 **Key takeaways** 
+>
+>- Poor data management creates hidden cost, friction, and delay.
+>- Data quality issues scale into expensive failures in AI and HPC workflows.
+>- Teams spend more time fixing data than building models.
+>- Weak practices undermine trust, automation, and compliance.
+>  
+Weak data management rarely fails loudly at first. Instead, it creates persistent friction and hidden cost.
+
+Teams may spend months training models on data that later turns out to be incomplete, biased, or misinterpreted. HPC simulations may need to be rerun simply because input data, assumptions, or versions were not properly documented. As compute scales up, these inefficiencies become expensive very quickly, financially, operationally, and environmentally.
+
+Typical consequences include:
+
+- wasted GPU and HPC cycles due to reprocessing, rerunning, or debugging data issues
+- AI models that perform well in testing but fail in production
+- automation that must be constantly overridden by humans
+- costly delays caused by late discovery of data errors
+- loss of confidence among engineers, management, or customers
+- compliance and audit risks when data lineage cannot be reconstructed
+
+Machine learning systems faithfully learn from the data they are given, including inconsistencies, biases, and errors. Because AI pipelines often involve multiple teams and long processing chains, data problems discovered late are especially expensive to fix. This is why mature organizations invest in early data validation, monitoring, and quality controls instead of relying on downstream fixes.
+
 ## 1.1.3 Turning data into a reusable business asset
