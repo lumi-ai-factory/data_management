@@ -15,7 +15,7 @@ AI systems are only as effective as the data behind them. Poorly managed data le
 In this course, you will learn how to manage data throughout its lifecycle to support industrial AI and high-performance computing (HPC). You will discover what makes data AI-ready, how FAIR principles support scalability and reuse, and how practical data management improves collaboration, automation, and long-term value creation.
 
 
->[!note] What you will learn
+>[!note] 💡 What you will learn
 >
 >- Why data management is a critical foundation for successful AI and HPC
 >- What AI-ready data looks like in practice
@@ -24,7 +24,7 @@ In this course, you will learn how to manage data throughout its lifecycle to su
 >- Which tools and approaches improve discoverability, interoperability, and automation
 >- How good data management translates into business value
 
-## Course structure
+### Course structure
 
 The course consists of three sections:
 
