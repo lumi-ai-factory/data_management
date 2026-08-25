@@ -8,12 +8,7 @@ nav_order: 2
 Learn why data management matters for industrial AI and HPC (Section 1), what AI-ready data looks like in practice (Section 2), and how FAIR-aligned (Findable, Accessible, Interoperable, Reusable) lifecycle practices turn data into a scalable, trustworthy asset (Section 3).
 
 <figure>
-  <img src="./assets/RDM-course-outline.png" alt="Data management course outline" style="width: 60%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure 1: Data management course outline.</em></figcaption>
-</figure>
-
-<figure>
-  <img src="./assets/RDM-course-outline.png" alt="Data management course outline" style="width: 60%; max-width: 100%; margin-left: auto; display: block;" />
+  <img src="./assets/RDM-course-outline.png" alt="Data management course outline" style="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure 1: Data management course outline.</em></figcaption>
 </figure>
 
