@@ -8,8 +8,8 @@ nav_order: 1
 
 # AI‑ready data: Data management for industry
 
->[!info]
->**Welcome to AI‑ready data: Data management for industry -course! Turn your data into a scalable AI asset!**
+>[!info] Welcome to AI‑ready data: Data management for industry -course!
+>**Turn your data into a scalable AI asset!**
 
 AI systems are only as effective as the data behind them. Poorly managed data leads to higher costs, slower development, unreliable results, and missed opportunities for reuse. Well-managed data enables trustworthy AI, efficient HPC workflows, and better business outcomes.
 
