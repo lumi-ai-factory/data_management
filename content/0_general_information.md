@@ -3,9 +3,7 @@ title: "0. General Information"
 nav_order: 3
 ---
 
-# 0. General Information
-
-## About this course
+# About this course
 
 Learn why data management matters for industrial AI and HPC (Section 1), what AI-ready data looks like in practice (Section 2), and how FAIR-aligned (Findable, Accessible, Interoperable, Reusable) lifecycle practices turn data into a scalable, trustworthy asset (Section 3).
 
