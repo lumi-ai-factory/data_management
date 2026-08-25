@@ -12,6 +12,11 @@ Learn why data management matters for industrial AI and HPC (Section 1), what AI
   <figcaption><em>Figure 1: Data management course outline.</em></figcaption>
 </figure>
 
+<figure>
+  <img src="./assets/RDM-course-outline.png" alt="Data management course outline" style="width: 60%; max-width: 100%; margin-left: auto; display: block;" />
+  <figcaption><em>Figure 1: Data management course outline.</em></figcaption>
+</figure>
+
 ## How to read this course
 
 >[!note] This course is structured so you can choose your level of depth.
