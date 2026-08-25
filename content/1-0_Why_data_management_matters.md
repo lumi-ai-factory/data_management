@@ -16,20 +16,24 @@ This section explains how weak data practices directly affect AI performance, HP
 
 >[!tip] ✅ Practical takeaway: Why data management matters
 > Use this checklist to quickly assess whether your organization is set up to get real value from AI and HPC, or whether data management gaps are increasing cost and risk.   
+>
 > **Strategic relevance**
 > - Do we treat data as a long-term business asset, not just project output?
 > - Is data management recognized as an operational and ongoing capability, not a one-time initiative?
 > - Are AI and HPC investments explicitly linked to data quality, reuse, and governance?
+>
 >
 > **Cost, efficiency, and scale**
 > - Do we avoid repeated data rebuilding and unnecessary recomputation?
 > - Can we reuse datasets across teams, projects, and model versions?
 > - Are expensive GPU and HPC resources used for innovation rather than data cleanup?
 >
+>
 > **Risk, trust, and compliance**
 > - Can we explain where our data comes from and how it has been processed?
 > - Is our data handling robust enough to support audits, certifications, or safety reviews?
 > - Do we have sufficient traceability to trust automated or AI-driven decisions?
+>
 >
 > **Workflow reliability**
 > - Are training, testing, validation, and simulation datasets clearly versioned and documented?
@@ -41,5 +45,6 @@ This section explains how weak data practices directly affect AI performance, HP
 > - slower AI development
 > - fragile automation
 > - increased compliance and trust risks
+>
 >
 > This section explains why these issues arise and why they intensify at scale, laying the groundwork for the next sections on **AI-ready data** and **FAIR lifecycle practices** that turn data management into a competitive advantage.
