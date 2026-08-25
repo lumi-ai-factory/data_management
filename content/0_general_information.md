@@ -1,5 +1,5 @@
 ---
-title: "0. General Information"
+title: "About this course"
 nav_order: 3
 ---
 
