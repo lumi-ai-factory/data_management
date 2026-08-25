@@ -39,12 +39,12 @@ This section explains how weak data practices directly affect AI performance, HP
 > - Are training, testing, validation, and simulation datasets clearly versioned and documented?
 > - Can results be reproduced weeks or months later by others?
 > - Do data issues surface early, before large-scale training or simulation runs?
->   
-> If several boxes remain unchecked, your organization is likely paying hidden costs in:
-> - wasted compute
-> - slower AI development
-> - fragile automation
-> - increased compliance and trust risks
->
->
-> This section explains why these issues arise and why they intensify at scale, laying the groundwork for the next sections on **AI-ready data** and **FAIR lifecycle practices** that turn data management into a competitive advantage.
+
+
+If several boxes remain unchecked, your organization is likely paying hidden costs in:
+- wasted compute
+- slower AI development
+- fragile automation
+- increased compliance and trust risks
+
+This section explains why these issues arise and why they intensify at scale, laying the groundwork for the next sections on **AI-ready data** and **FAIR lifecycle practices** that turn data management into a competitive advantage.
