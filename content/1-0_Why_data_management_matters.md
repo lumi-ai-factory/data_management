@@ -1,6 +1,6 @@
 ---
 title: "1. Why data management matters"
-nav_order: 4
+nav_order: 3
 ---
 
 # 1. Why data management matters
