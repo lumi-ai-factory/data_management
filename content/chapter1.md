@@ -1,6 +1,6 @@
 ---
 title: "Delete this - Chapter 1 — Getting Started with LUMI"
-nav_order: 2
+nav_order: 8
 ---
 
 # Chapter 1 — Getting Started with LUMI
