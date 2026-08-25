@@ -1,5 +1,5 @@
 ---
-title: "Chapter 1 — Getting Started with LUMI"
+title: "Delete this - Chapter 1 — Getting Started with LUMI"
 nav_order: 2
 ---
 
