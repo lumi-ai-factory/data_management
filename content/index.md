@@ -27,7 +27,9 @@ In this course, you will learn how to manage data throughout its lifecycle to su
 ### Course structure
 
 **This course is structured so you can choose your level of depth.**
+
 ⏱️ For a *quick overview*, focus on Section at a glance and Key takeaways.
+
 🔍 For *deeper understanding*, read the full content.
 
 The course consists of three sections:
@@ -35,11 +37,9 @@ The course consists of three sections:
 **1. Why data management matters**
 - Data as a strategic business asset
 - Governance, Ttust, and scalable AI
-
 **2. AI-ready data**
 - Understanding AI-ready data: chore characteristics, metadata & documentation
 - Applying AI-ready data: When AI-ready data meets real AI and HPC workflows
-
 **3. From data to scalable AI - FAIR‑aligned data lifecycle management for AI & HPC**
 - FAIR data for industry
 - Core components of industrial data lifecycle
