@@ -3,7 +3,7 @@ title: "About this course"
 nav_order: 2
 ---
 
-# About this course
+# ⭐ About this course
 
 Learn why data management matters for industrial AI and HPC (Section 1), what AI-ready data looks like in practice (Section 2), and how FAIR-aligned (Findable, Accessible, Interoperable, Reusable) lifecycle practices turn data into a scalable, trustworthy asset (Section 3).
 
@@ -15,7 +15,7 @@ Learn why data management matters for industrial AI and HPC (Section 1), what AI
 > [!info] Use of Microsoft Copilot in Course Development
 > Microsoft Copilot was used selectively to support the creation of this course and the adaptation of existing CSC Research Data Management (RDM) learning materials for industry-specific purposes. All content was reviewed and approved by the course authors.
 
-## How to read this course
+## 📚 How to read this course
 
 >[!note] This course is structured so you can choose your level of depth.
 >
@@ -26,7 +26,7 @@ Learn why data management matters for industrial AI and HPC (Section 1), what AI
 >Both approaches are supported, and you can move between them as your needs, role, or projects evolve.
 
 
-## Who this course is for (and who it is not)
+## 🌱 Who this course is for (and who it is not)
 
 This course is designed for **industry professionals working with AI, data, or high-performance computing**, including data engineers, AI/ML practitioners, software and systems engineers, architects, R&D teams, and technical project leads. It is especially relevant for organizations using or planning to use **HPC and AI Factory-type environments**, where data quality, structure, and lifecycle management directly affect cost, performance, and reliability.
 
@@ -40,7 +40,7 @@ The course assumes basic familiarity with data and AI concepts but does **not** 
 
 Instead, it provides a shared understanding of **good data management practices that enable scalable, trustworthy AI in industry** and points learners to more specialized materials when needed.
 
-## Learning Objectives (LOs)
+## 🎓 Learning Objectives (LOs)
 
 After completing this course, participants will be able to:
 
