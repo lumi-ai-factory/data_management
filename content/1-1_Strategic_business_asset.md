@@ -46,7 +46,7 @@ Typical consequences include:
 - compliance and audit risks when data lineage cannot be reconstructed
 
 <figure>
-  <img src="./assets/weak-vs-good-dm.png" alt=Weak vs good data management style="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/weak-vs-good-dm.png" alt= Weak vs good data management style="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure 2: Weak vs good data management</em></figcaption>
 </figure>
 
