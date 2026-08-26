@@ -45,6 +45,11 @@ Typical consequences include:
 - loss of confidence among engineers, management, or customers
 - compliance and audit risks when data lineage cannot be reconstructed
 
+<figure>
+  <img src="./assets/weak-vs-good-dm.png" alt=Weak vs good data management style="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure 2: Weak vs good data management</em></figcaption>
+</figure>
+
 Machine learning systems faithfully learn from the data they are given, including inconsistencies, biases, and errors. Because AI pipelines often involve multiple teams and long processing chains, data problems discovered late are especially expensive to fix. This is why mature organizations invest in early data validation, monitoring, and quality controls instead of relying on downstream fixes.
 
 ## 1.1.3 Turning data into a reusable business asset
