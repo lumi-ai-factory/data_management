@@ -49,6 +49,11 @@ The key challenge is that **meaning in industrial data lies in relationships and
 | ERP workflows | Event logs | Processes become measurable: process mining, performance analysis, bottleneck detection |
 | PLM documents & design data | RAG + embeddings | Engineering knowledge becomes accessible: contextual Q&A across lifecycle and design data |
 
+<figure>
+  <img src="./assets/industrial-data-AI-use-cases.png" alt= Industrial data AI use cases ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: Industrial data AI use cases</em></figcaption>
+</figure>
+
 ```quiz
 title: Check your understanding
 
