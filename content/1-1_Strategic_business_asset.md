@@ -47,7 +47,7 @@ Typical consequences include:
 
 <figure>
   <img src="./assets/weak-vs-good-dm.png" alt= Weak vs good data management style="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure 2: Weak vs good data management</em></figcaption>
+  <figcaption><em>Figure: Weak vs good data management</em></figcaption>
 </figure>
 
 Machine learning systems faithfully learn from the data they are given, including inconsistencies, biases, and errors. Because AI pipelines often involve multiple teams and long processing chains, data problems discovered late are especially expensive to fix. This is why mature organizations invest in early data validation, monitoring, and quality controls instead of relying on downstream fixes.
@@ -69,7 +69,7 @@ In practice, raw data has little value on its own. Data becomes a business asset
 
 <figure>
   <img src="./assets/data-as-a-business-asset.png" alt= Data as a business asset ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure 3: Data as a business asset</em></figcaption>
+  <figcaption><em>Figure: Data as a business asset</em></figcaption>
 </figure>
 
 In AI and HPC contexts, this distinction matters enormously. Optimized and well‑described datasets enable faster model convergence, more stable simulations, and lower compute consumption. Conversely, unmanaged datasets lead to repeated preprocessing, brittle pipelines, and constant rework.
