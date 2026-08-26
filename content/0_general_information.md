@@ -47,3 +47,9 @@ After completing this course, participants will be able to:
 4. **Design and manage** data across its full industrial lifecycle, from planning and collection to processing, preservation, and reuse, with AI and HPC workflows in mind.
 5. **Use** key tools and enablers, such as data catalogs, metadata standards, persistent identifiers, and knowledge graphs, to improve discoverability, automation, and collaboration.
 6. **Connect** good data management practices to real business value, including faster AI development, better use of HPC resources, reduced risk, and cross-team reuse of high-value data assets.
+
+
+<figure>
+  <img src="./assets/cc-by-40.png alt="CC-BY 4.0" style="width: 20%; max-width: 100%; margin: 0 auto; display: block;" />
+</figure>
+© 2026 LUMI AI Factory. This work is licensed under a [Creative Commons Attribution 4.0 International (CC BY 4.0) License](https://creativecommons.org/licenses/by/4.0/)
