@@ -12,8 +12,8 @@ Learn why data management matters for industrial AI and HPC (Section 1), what AI
   <figcaption><em>Figure: Data management course outline</em></figcaption>
 </figure>
 
->[!info] Use of Microsoft Copilot in Course Development
->Microsoft Copilot was used selectively to support the creation of this course and the adaptation of existing CSC Research Data Management (RDM) learning materials for industry-specific purposes. All content was reviewed and approved by the course authors.
+> [!info] Use of Microsoft Copilot in Course Development
+> Microsoft Copilot was used selectively to support the creation of this course and the adaptation of existing CSC Research Data Management (RDM) learning materials for industry-specific purposes. All content was reviewed and approved by the course authors.
 
 ## How to read this course
 
