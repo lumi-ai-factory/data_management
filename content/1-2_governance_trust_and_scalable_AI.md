@@ -22,6 +22,11 @@ Key regulatory and standards drivers include:
 - **The EU AI Act**, which introduces obligations for high‑risk AI systems, including dataset relevance, representativeness, documentation, traceability, and bias mitigation
 - **Sector‑specific standards** (e.g. ISO, IEC), which require reproducibility, traceability, and controlled data handling
 
+<figure>
+  <img src="./assets/key-regulatory-and-standards-drivers.png" alt= Key regulatory and standards drivers ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: Key regulatory and standards drivers</em></figcaption>
+</figure>
+
 Good data management does not eliminate regulatory effort, but it makes compliance achievable at scale. Without proper metadata, lineage, and versioning, audits and certifications become manual, fragile, and error‑prone—especially in complex AI and HPC environments.
 
 ## 1.2.1 Ethical and Responsible Use of Data
