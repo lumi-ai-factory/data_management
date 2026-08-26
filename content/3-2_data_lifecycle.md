@@ -27,7 +27,6 @@ nav_order: 2
   <figcaption><em>Figure: Data management lifecycle</em></figcaption>
 </figure>
 
-
 ## 3.2.1 Planning & requirements
 Industrial data lifecycles begin with clear planning. Before collecting any data, organizations need to define its purpose, expected value, stakeholders, risks, and compliance constraints. Whether data is intended for large‑scale model training, simulations, or robotics control directly influences format choices, quality requirements, access rules, and lifecycle length. Without this clarity, organizations often generate data that later proves incompatible with scalable AI or HPC workflows.
  
