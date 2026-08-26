@@ -28,7 +28,7 @@ In this course, you will learn how to manage data throughout its lifecycle to su
 
 This course is structured so you can choose your level of depth.
 
-- ⏱️ For a **quick overview**, focus on Section at a glance and Key takeaways.
+- ⏱️ For a **quick overview**, focus on Section at a glance (Overview-pages) and Key takeaways in the beginning of each section.
 - 🔍 For **deeper understanding**, read the full content.
 
 ## The course consists of three sections
