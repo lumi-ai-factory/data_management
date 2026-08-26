@@ -23,7 +23,7 @@ nav_order: 2
 > This lifecycle approach ensures industrial datasets remain high‑quality, compliant, and ready for intensive AI and HPC workloads such as those run on LUMI AI Factory.
 
 <figure>
-  <img src="./RDM-lifecycle.png" alt= RDM-lifecycle ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/data-management-lifecycle.png" alt= Data management lifecycle ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: Data management lifecycle</em></figcaption>
 </figure>
 
