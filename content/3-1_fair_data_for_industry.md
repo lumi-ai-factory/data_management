@@ -34,10 +34,10 @@ Importantly, **FAIR does not mean “open".** Most industrial data is proprietar
 >
 >FAIR in industry means making data structured, documented, and machine‑actionable so it can flow reliably through AI and HPC workflows.
 >
-> - Findable data uses persistent identifiers, searchable internal catalogs, and linked metadata so teams and systems can locate the right dataset quickly and consistently.
-> - Accessible data has clear, secure, and documented access rules, delivered through authenticated APIs that allow automated HPC jobs to retrieve data without manual steps.
-> - Interoperable data follows common formats, schemas, and shared vocabularies so it moves smoothly between tools, vendors, and teams, enabling automated end‑to‑end workflows.
-> - Reusable data includes clear provenance, licensing terms, quality indicators, and versioning so it can be confidently used again for new models, simulations, and business needs.
+> - **Findable** data uses persistent identifiers, searchable internal catalogs, and linked metadata so teams and systems can locate the right dataset quickly and consistently.
+> - **Accessible** data has clear, secure, and documented access rules, delivered through authenticated APIs that allow automated HPC jobs to retrieve data without manual steps.
+> - **Interoperable** data follows common formats, schemas, and shared vocabularies so it moves smoothly between tools, vendors, and teams, enabling automated end‑to‑end workflows.
+> - **Reusable** data includes clear provenance, licensing terms, quality indicators, and versioning so it can be confidently used again for new models, simulations, and business needs.
 >
 >Together, these practices reduce duplication, improve automation, and ensure that valuable industrial datasets remain usable across systems, teams, and time.
 
