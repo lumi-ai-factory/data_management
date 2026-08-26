@@ -24,15 +24,15 @@ In this course, you will learn how to manage data throughout its lifecycle to su
 >- Which tools and approaches improve discoverability, interoperability, and automation
 >- How good data management translates into business value
 
-### Course structure
+## Course structure
 
 > [!info] This course is structured so you can choose your level of depth.
 >
-> ⏱️ For a *quick overview*, focus on Section at a glance and Key takeaways.
+> ⏱️ For a **quick overview**, focus on Section at a glance and Key takeaways.
 >
-> 🔍 For *deeper understanding*, read the full content.
+> 🔍 For **deeper understanding**, read the full content.
 
-**The course consists of three sections:**
+## The course consists of three sections
 
 **1. Why data management matters**
 - Data as a strategic business asset
