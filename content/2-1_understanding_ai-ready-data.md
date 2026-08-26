@@ -92,6 +92,12 @@ Instead, it is best understood as a **combination of practical data characterist
 The elements below describe **what must be true about the data itself** before AI pipelines can run predictably in industrial and high‑performance computing environments.
 
 ### Characteristics of AI-ready data (Industry & HPC Context)
+
+<figure>
+  <img src="./assets/AI-ready-data-building-blocks.png" alt= AI-ready data building blocks ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: AI-ready data building blocks</em></figcaption>
+</figure>
+
 | AI-ready data characteristic | What it means and why it matters | Example |
 |:-----------------------------|:---------------------------------|:--------|
 | Data quality | Data is accurate, complete, and fit for its intended AI use. Poor quality data leads to unreliable models and wasted GPU/HPC runs, because AI systems amplify data errors rather than correct them. | In robotics control data, inconsistent timestamps or missing sensor values can silently degrade model performance, even when large-scale GPU training completes successfully. |
