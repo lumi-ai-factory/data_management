@@ -50,7 +50,7 @@ This course is structured so you can choose your level of depth.
 > You do not need expertise in research data management to complete this course. The focus is on practical approaches that help organizations develop scalable, trustworthy AI and data-driven services.
 
 
-
+© 2026 LUMI AI Factory. This work is licensed under a [Creative Commons Attribution 4.0 International - CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/)
 
 
 # LUMI AIF Learning Template
