@@ -35,6 +35,11 @@ For example, a manufacturing company training a predictive maintenance model may
 > - **AI‑ready data** refers to the **properties of the data itself**: What must be true about datasets before AI and HPC workflows can work reliably.
 > - **AI readiness** refers to **organizational preparedness** (systems, skills, governance) and is discussed elsewhere in the course.
 
+<figure>
+  <img src="./assets/AI-ready-and-AI-readiness.png" alt= AI-ready data and AI-readiness ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: AI-ready data and AI-readiness</em></figcaption>
+</figure>
+
 ### Industrial data
 
 Many high‑value industrial AI use cases rely on structured data such as **BOMs (Bills of Materials), part hierarchies, procurement data, and ERP/PLM (Enterprise Resource Planning  and Product Lifecycle Management) workflows**. While this data is well suited for operational systems, it is not AI‑ready by default. While for example ERP and PLM systems rely on relational structures, identifiers, and predefined logic, AI models require representations that allow them to detect patterns, relationships, and similarities computationally.
