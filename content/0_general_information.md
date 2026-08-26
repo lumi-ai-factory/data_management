@@ -50,6 +50,6 @@ After completing this course, participants will be able to:
 
 
 <figure>
-  <img src="./assets/cc-by-40.png alt="CC-BY 4.0" style="width: 20%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/cc-by-40.png" alt="CC-BY 4.0" style="width: 20%; max-width: 100%; margin: 0 auto; display: block;" />
 </figure>
-© 2026 LUMI AI Factory. This work is licensed under a [Creative Commons Attribution 4.0 International (CC BY 4.0) License](https://creativecommons.org/licenses/by/4.0/)
+© 2026 LUMI AI Factory. This work is licensed under a [Creative Commons Attribution 4.0 International - CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/)
