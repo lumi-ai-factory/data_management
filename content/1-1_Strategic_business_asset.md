@@ -67,6 +67,11 @@ In practice, raw data has little value on its own. Data becomes a business asset
 - sufficiently documented to be reused
 - structured and versioned so it fits automated workflows
 
+<figure>
+  <img src="./assets/data-as-a-business-asset.png" alt= Data as a business asset ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure 3: Data as a business asset</em></figcaption>
+</figure>
+
 In AI and HPC contexts, this distinction matters enormously. Optimized and well‑described datasets enable faster model convergence, more stable simulations, and lower compute consumption. Conversely, unmanaged datasets lead to repeated preprocessing, brittle pipelines, and constant rework.
 
 Perhaps most importantly, AI‑ready data is reusable. A dataset prepared carefully for one machine‑learning project may later support another without requiring the same preparation effort again. At scale, even small improvements in data quality, documentation, and reuse can translate into significant reductions in compute cost and development time.
