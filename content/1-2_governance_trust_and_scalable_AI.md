@@ -51,6 +51,11 @@ Clear documentation and traceability support:
 
 Responsible practice means treating AI as a support tool, not a decision‑maker, and ensuring that humans remain accountable for outcomes—particularly in safety‑critical or highly automated environments.
 
+<figure>
+  <img src="./assets/responsible-ethical-use-of-data.png" alt= Responsible and ethical use of data in practice ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: Responsible and ethical use of data in practice</em></figcaption>
+</figure>
+
 ## Preventing bias, misuse, and loss of control
 
 Bias and misuse rarely originate in models alone. They are often introduced earlier through data selection, preparation, and reuse. Poorly governed datasets can embed historical bias, be applied outside their original context, or be reused without understanding their limitations.
