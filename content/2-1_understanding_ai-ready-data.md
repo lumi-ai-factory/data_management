@@ -94,7 +94,7 @@ The elements below describe **what must be true about the data itself** before A
 ### Characteristics of AI-ready data (Industry & HPC Context)
 
 <figure>
-  <img src="./assets/ai-ready-data-blocks.png.png" alt=AI-ready data building blocks ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/ai-ready-data-blocks.png" alt=AI-ready data building blocks ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: AI-ready data "building blocks"</em></figcaption>
 </figure>
 
