@@ -6,9 +6,9 @@ nav_order: 1
 > [!warning] Notice: Under development!
 > This material is currently under development. Content, structure, pictures, examples, and linked resources may change.
 
-# AI‑ready data: Data management for industry
+# AI‑ready data and FAIR data management for industry
 
->[!info] 🚀 Welcome to AI‑ready data: Data management for industry -course!
+>[!info] 🚀 Welcome to AI‑ready data and FAIR data management for industry -course!
 >**It is time to turn your data into a scalable AI asset!**
 
 AI systems are only as effective as the data behind them. Poorly managed data leads to higher costs, slower development, unreliable results, and missed opportunities for reuse. Well-managed data enables trustworthy AI, efficient HPC workflows, and better business outcomes.
