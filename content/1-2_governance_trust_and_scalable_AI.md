@@ -100,7 +100,7 @@ High‑quality, accessible data allows organizations to move from reactive decis
 >
 These capabilities depend not only on models and compute, but on consistent, well‑understood data inputs. Models and compute scale fast, but data issues scale faster. Without strong data management, automation remains fragile and AI workflows require constant supervision.
 
-> [!tip]
+> [!tip] 💡
 > As AI and HPC workloads grow, data must also support:
 > - distributed processing and parallel access
 > - reproducibility across long time spans
