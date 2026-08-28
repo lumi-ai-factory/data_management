@@ -24,7 +24,7 @@ FAIR focuses on metadata quality, persistent identifiers, clear licensing, and s
 Importantly, **FAIR does not mean “open".** Most industrial data is proprietary or confidential, yet still benefits from FAIR practices. Internally FAIR‑aligned datasets are easier to find, understand, and reuse, while remaining protected through controlled access. The same principles also help organizations efficiently discover and evaluate external or shared datasets when relevant. Making data FAIR improves its internal usability while fully respecting commercial, ethical, or regulatory constraints.
 
 <figure>
-  <img src="./assets/FAIR.png" alt= FAIR ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/FAIR.png" alt= "FAIR" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: FAIR</em></figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ Importantly, **FAIR does not mean “open".** Most industrial data is proprietar
 >Together, these practices reduce duplication, improve automation, and ensure that valuable industrial datasets remain usable across systems, teams, and time.
 
 <figure>
-  <img src="./assets/FAIR-principles.png" alt= FAIR-principles ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/FAIR-principles.png" alt= "FAIR-principles" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: FAIR-principles</em></figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ Findable means datasets can be reliably located by people and automated AI/HPC w
 - Explicit focus on internal discoverability across teams and tools
 
 <figure>
-  <img src="./assets/findable.png" alt= Findable ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/findable.png" alt= "Findable" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: Findable</em></figcaption>
 </figure>
 
@@ -84,7 +84,7 @@ Accessibility means that once data has been found, it can be retrieved under cle
 - Clear access rules recorded in metadata
 
 <figure>
-  <img src="./assets/accessible.png" alt= Accessible ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/accessible.png" alt= "Accessible" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: Accessible</em></figcaption>
 </figure>
 
@@ -111,7 +111,7 @@ Interoperable means that data can flow seamlessly between different tools, platf
 - Shared vocabularies, taxonomies and ontologies
 
 <figure>
-  <img src="./assets/interoperable.png" alt= Interoperable ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/interoperable.png" alt= "Interoperable" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: Interoperable</em></figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ Reusable means that data is prepared so it can be reliably used again for new mo
 - Dataset and model versioning
 
 <figure>
-  <img src="./assets/reusable.png" alt= Reusable ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/reusable.png" alt= "Reusable" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: Reusable</em></figcaption>
 </figure>
 
