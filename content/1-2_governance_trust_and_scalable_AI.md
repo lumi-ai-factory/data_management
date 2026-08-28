@@ -23,7 +23,7 @@ Key regulatory and standards drivers include:
 - **Sector‑specific standards** (e.g. ISO, IEC), which require reproducibility, traceability, and controlled data handling
 
 <figure>
-  <img src="./assets/key-regulatory-and-standards-drivers.png" alt= Key regulatory and standards drivers ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/key-regulatory-and-standards-drivers.png" alt= "Key regulatory and standards drivers" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: Key regulatory and standards drivers</em></figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ Clear documentation and traceability support:
 Responsible practice means treating AI as a support tool, not a decision‑maker, and ensuring that humans remain accountable for outcomes—particularly in safety‑critical or highly automated environments.
 
 <figure>
-  <img src="./assets/responsible-ethical-use-of-data.png" alt= Responsible and ethical use of data in practice ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/responsible-ethical-use-of-data.png" alt= "Responsible and ethical use of data in practice" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: Responsible and ethical use of data in practice</em></figcaption>
 </figure>
 
