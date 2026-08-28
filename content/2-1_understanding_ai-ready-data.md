@@ -36,7 +36,7 @@ For example, a manufacturing company training a predictive maintenance model may
 > - **AI readiness** refers to **organizational preparedness** (systems, skills, governance) and is discussed elsewhere in the course.
 
 <figure>
-  <img src="./assets/AI-ready-and-AI-readiness.png" alt= AI-ready data and AI-readiness ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/AI-ready-and-AI-readiness.png" alt= "AI-ready data and AI-readiness" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: AI-ready data and AI-readiness</em></figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ The key challenge is that **meaning in industrial data lies in relationships and
 | PLM documents & design data | RAG + embeddings | Engineering knowledge becomes accessible: contextual Q&A across lifecycle and design data |
 
 <figure>
-  <img src="./assets/industrial-data-AI-use-cases.png" alt= Industrial data AI use cases ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/industrial-data-AI-use-cases.png" alt= "Industrial data AI use cases" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: Industrial data AI use cases</em></figcaption>
 </figure>
 
@@ -169,7 +169,7 @@ For AI‑ready data, metadata provides the context needed to interpret and trust
 Metadata is therefore not an add‑on. It is **one of the defining characteristics that makes data AI‑ready**.
 
 <figure>
-  <img src="./assets/metadata.png" alt= Metadata ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/metadata.png" alt= "Metadata" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: Metadata</em></figcaption>
 </figure>
 
