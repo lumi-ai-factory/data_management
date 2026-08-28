@@ -46,7 +46,7 @@ Typical consequences include:
 - compliance and audit risks when data lineage cannot be reconstructed
 
 <figure>
-  <img src="./assets/weak-vs-good-dm.png" alt= Weak vs good data management style="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/weak-vs-good-dm.png" alt= "Weak vs good data management" style="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: Weak vs good data management</em></figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ In practice, raw data has little value on its own. Data becomes a business asset
 - structured and versioned so it fits automated workflows
 
 <figure>
-  <img src="./assets/data-as-a-business-asset.png" alt= Data as a business asset ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/data-as-a-business-asset.png" alt= "Data as a business asset" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: Data as a business asset</em></figcaption>
 </figure>
 
