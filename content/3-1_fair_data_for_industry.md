@@ -58,7 +58,7 @@ Findable means datasets can be reliably located by people and automated AI/HPC w
 - Explicit focus on internal discoverability across teams and tools
 
 <figure>
-  <img src="./assets/findable.png" alt= "Findable" ="width: 110%; max-width: 110%; margin: 0 auto; display: block;" />
+  <img src="./assets/findable.png" alt= "Findable" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: Findable</em></figcaption>
 </figure>
 
