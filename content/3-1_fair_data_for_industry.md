@@ -59,7 +59,7 @@ Findable means datasets can be reliably located by people and automated AI/HPC w
 
 <figure>
   <img src="./assets/findable.png" alt= "Findable" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: Findable</em></figcaption>
+  <figcaption><em>Figure: F = Findable</em></figcaption>
 </figure>
 
 
@@ -85,7 +85,7 @@ Accessibility means that once data has been found, it can be retrieved under cle
 
 <figure>
   <img src="./assets/accessible.png" alt= "Accessible" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: Accessible</em></figcaption>
+  <figcaption><em>Figure: A = Accessible</em></figcaption>
 </figure>
 
 >[!tip]✅ Practical examples
@@ -112,7 +112,7 @@ Interoperable means that data can flow seamlessly between different tools, platf
 
 <figure>
   <img src="./assets/interoperable.png" alt= "Interoperable" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: Interoperable</em></figcaption>
+  <figcaption><em>Figure: I = Interoperable</em></figcaption>
 </figure>
 
 >[!tip]✅ Practical examples
@@ -138,7 +138,7 @@ Reusable means that data is prepared so it can be reliably used again for new mo
 
 <figure>
   <img src="./assets/reusable.png" alt= "Reusable" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: Reusable</em></figcaption>
+  <figcaption><em>Figure: R = Reusable</em></figcaption>
 </figure>
 
 >[!tip]✅ Practical examples
