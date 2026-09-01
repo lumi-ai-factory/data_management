@@ -7,11 +7,6 @@ nav_order: 2
 
 Learn why data management matters for industrial AI and HPC (Section 1), what AI-ready data looks like in practice (Section 2), and how FAIR-aligned (Findable, Accessible, Interoperable, Reusable) lifecycle practices turn data into a scalable, trustworthy asset (Section 3).
 
-<figure>
-  <img src="./assets/RDM-course-outline.png" alt="Data management course outline" style="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: Data management course outline</em></figcaption>
-</figure>
-
 > [!info] 🤖✨ Use of Microsoft Copilot in Course Development
 > Microsoft Copilot was used selectively to support the creation of this course and the adaptation of existing CSC Research Data Management (RDM) learning materials for industry-specific purposes. All content was reviewed and approved by the course authors.
 
