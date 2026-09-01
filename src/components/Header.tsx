@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/lib/theme";
-import { siteConfig } from "../../site.config";
+import { siteConfig } from "@/lib/site";
 
 export function Header() {
   const { theme, resolved, setTheme } = useTheme();

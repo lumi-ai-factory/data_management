@@ -1,15 +1,19 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { findPage, getPageDescription } from "@/lib/content";
 import { PageLayout } from "@/components/PageLayout";
-import { siteConfig, absoluteUrl } from "../../site.config";
+import { siteConfig, absoluteUrl } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
   component: IndexPage,
   head: () => {
     const page = findPage("");
-    const title = page?.frontmatter.title
-      ? `${page.frontmatter.title} — ${siteConfig.title}`
-      : siteConfig.title;
+    // The site title comes from this page's own `#` heading, so an author who
+    // uses the same words in the front-matter title would otherwise get it
+    // twice in the tab ("Intro to LUMI | Intro to LUMI").
+    const title =
+      page?.frontmatter.title && page.frontmatter.title !== siteConfig.title
+        ? `${page.frontmatter.title} | ${siteConfig.title}`
+        : siteConfig.title;
     const description = page
       ? getPageDescription(page) || siteConfig.description
       : siteConfig.description;

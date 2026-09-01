@@ -14,10 +14,12 @@ const linkIconSvg = fromHtmlIsomorphic(
   { fragment: true },
 ).children;
 import { toast } from "sonner";
+import { Download } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { visit } from "unist-util-visit";
 import { Callout } from "./Callout";
 import { CodeBlock } from "./CodeBlock";
+import { MermaidDiagram } from "./MermaidDiagram";
 import { Quiz } from "./Quiz";
 import { parseQuiz } from "@/lib/quiz";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
@@ -119,6 +121,77 @@ function resolveAssetUrl(src: string | undefined): string | undefined {
   const base = (import.meta.env.BASE_URL || "/").replace(/\/$/, "");
   const rel = src.replace(/^\.\//, "");
   return `${base}/${rel}`;
+}
+
+// File extensions rendered as inline images. Any other extension linked from a
+// page is offered as a download instead (see `FileDownload`).
+const IMAGE_EXTENSIONS = new Set([
+  "png",
+  "jpg",
+  "jpeg",
+  "gif",
+  "svg",
+  "webp",
+  "avif",
+  "bmp",
+  "ico",
+]);
+
+/** Lowercase extension of a URL path (without the dot), ignoring any query or
+ *  hash; "" when there is none. A leading-dot name (`.gitignore`) has none. */
+function fileExtension(url: string): string {
+  const path = url.split(/[?#]/, 1)[0];
+  const name = path.slice(path.lastIndexOf("/") + 1);
+  const dot = name.lastIndexOf(".");
+  return dot <= 0 ? "" : name.slice(dot + 1).toLowerCase();
+}
+
+/** Decoded basename of a URL path, ignoring any query or hash. */
+function fileBasename(url: string): string {
+  const path = url.split(/[?#]/, 1)[0].replace(/\/+$/, "");
+  const base = path.slice(path.lastIndexOf("/") + 1);
+  try {
+    return decodeURIComponent(base);
+  } catch {
+    return base;
+  }
+}
+
+/** True for link text that carries no real label: empty, whitespace, or an
+ *  array of only such nodes (react-markdown passes `[]` for `[](url)`). */
+function isBlankNode(node: React.ReactNode): boolean {
+  if (node == null || node === false) return true;
+  if (typeof node === "string") return node.trim() === "";
+  if (Array.isArray(node)) return node.every(isBlankNode);
+  return false;
+}
+
+/** A link to a static, non-page file (notebook, zip, pdf, csv, ...) rendered as
+ *  a download chip. `href` is resolved against the GitHub Pages base path the
+ *  same way images are, so authors write a relative `assets/…` path; `download`
+ *  makes the browser save the file under its original name instead of the
+ *  client router trying to navigate to it. The label falls back to the file
+ *  name when the author gives none (or just reuses the path as the text). */
+function FileDownload({ href, label }: { href: string; label?: React.ReactNode }) {
+  const url = resolveAssetUrl(href) ?? href;
+  const name = fileBasename(href);
+  const ext = fileExtension(href).toUpperCase();
+  const useName = isBlankNode(label) || (typeof label === "string" && label.trim() === href.trim());
+  return (
+    <a
+      href={url}
+      download
+      className="inline-flex max-w-full items-center gap-2 rounded-md border border-border bg-card px-3 py-1.5 align-middle text-sm font-medium text-foreground no-underline transition-colors hover:border-lumi-magenta hover:text-lumi-magenta"
+    >
+      <Download className="h-4 w-4 shrink-0 opacity-70" aria-hidden="true" />
+      <span>{useName ? name : label}</span>
+      {ext && (
+        <span className="shrink-0 rounded bg-foreground/10 px-1.5 py-0.5 text-[0.65rem] font-semibold tracking-wide text-foreground/60">
+          {ext}
+        </span>
+      )}
+    </a>
+  );
 }
 
 const CALLOUT_RE = /^\[!(note|warning|info|tip|command)\][ \t]*([^\n]*)/i;
@@ -289,6 +362,22 @@ export function MarkdownRenderer({ source, enableGlossary = true }: MarkdownRend
     return () => el.removeEventListener("click", onClick);
   }, []);
 
+  // A shared link can point at a heading that titles a collapsed <details>
+  // (e.g. an exercise). Open it so the reader lands on the content, not on a
+  // closed box.
+  React.useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    if (!hash) return;
+    let id = hash;
+    try {
+      id = decodeURIComponent(hash);
+    } catch {
+      /* malformed escape: use the raw hash */
+    }
+    const target = containerRef.current?.querySelector(`[id="${CSS.escape(id)}"]`);
+    target?.closest("details")?.setAttribute("open", "");
+  }, [processedSource]);
+
   return (
     <div className="prose-lumi" ref={containerRef}>
       <ReactMarkdown
@@ -362,6 +451,10 @@ export function MarkdownRenderer({ source, enableGlossary = true }: MarkdownRend
               return <Quiz title={quiz.title} questions={quiz.questions} />;
             }
 
+            if (/\blanguage-mermaid\b/.test(childClassName)) {
+              return <MermaidDiagram source={nodeToText(child.props.children).trim()} />;
+            }
+
             const parsed = parseCodeMeta(dataMeta);
             return (
               <CodeBlock
@@ -422,6 +515,14 @@ export function MarkdownRenderer({ source, enableGlossary = true }: MarkdownRend
                 </a>
               );
             }
+            // A link to a static file (any extension other than a `.md` page)
+            // is offered as a download, resolved against the base path like an
+            // image, rather than routed as a page. `href` is a string here: the
+            // isExternal guard above returns for the undefined case.
+            const ext = fileExtension(href);
+            if (ext && ext !== "md") {
+              return <FileDownload href={href} label={children} />;
+            }
             // Internal links go through the router so the GitHub Pages base
             // path (e.g. "/<repo>/") is applied automatically.
             const [path, hash] = href.split("#");
@@ -435,6 +536,12 @@ export function MarkdownRenderer({ source, enableGlossary = true }: MarkdownRend
           img(props) {
             const { src, alt, style, width, height, className } =
               props as React.ImgHTMLAttributes<HTMLImageElement>;
+            // A non-image target (e.g. `![notebook](assets/run.ipynb)`) is a
+            // file download, not a broken <img>.
+            const ext = fileExtension(src ?? "");
+            if (src && ext && !IMAGE_EXTENSIONS.has(ext)) {
+              return <FileDownload href={src} label={alt || undefined} />;
+            }
             const resolved = resolveAssetUrl(src) ?? "";
             const altText = alt ?? "";
             return (

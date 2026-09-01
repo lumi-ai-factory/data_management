@@ -15,6 +15,11 @@ export function TableOfContents({ items }: Props) {
   const scrollToId = React.useCallback((id: string) => {
     const el = document.getElementById(id);
     if (!el) return;
+    // The heading can sit inside a collapsed <details>. Open it, and any
+    // <details> around that one, so the scroll lands on real content.
+    for (let box = el.closest("details"); box; box = box.parentElement?.closest("details") ?? null) {
+      box.open = true;
+    }
     lockedActiveIdRef.current = id;
     restoringHashRef.current = true;
     const top = el.getBoundingClientRect().top + window.scrollY - 80;
@@ -158,6 +163,10 @@ export function TableOfContents({ items }: Props) {
       const activationLine = window.scrollY + baseOffset + (endOffset - baseOffset) * easedRamp;
       let current: string | null = null;
       for (const h of headings) {
+        // A heading inside a collapsed <details> is not laid out at all, so it
+        // measures as zero at the top of the page and would win every
+        // comparison. Skip it until the reader opens the box.
+        if (h.offsetParent === null) continue;
         const top = h.getBoundingClientRect().top + window.scrollY;
         if (top <= activationLine) current = h.id;
         else break;
@@ -171,11 +180,16 @@ export function TableOfContents({ items }: Props) {
       const shouldUpdateHash = !restoringHashRef.current;
       computeActive(shouldUpdateHash);
     };
+    // Opening or closing a <details> adds or removes its headings and moves
+    // everything below it without any scrolling, so re-measure then too. The
+    // event does not bubble, hence the capture phase.
     window.addEventListener("scroll", onScroll, { passive: true });
+    document.addEventListener("toggle", onScroll, { capture: true });
     computeActive(false);
 
     return () => {
       window.removeEventListener("scroll", onScroll);
+      document.removeEventListener("toggle", onScroll, { capture: true });
     };
   }, [items, replaceHash]);
 

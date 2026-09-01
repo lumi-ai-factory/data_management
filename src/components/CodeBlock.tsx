@@ -115,7 +115,7 @@ export function CodeBlock({
       <div className="nano-block group relative my-5 overflow-hidden rounded-md border border-nano-border shadow-md">
         <div className="nano-titlebar flex items-center justify-between px-3 py-1.5">
           <span className="font-sans text-xs font-semibold truncate">
-            GNU nano — {title ?? "New Buffer"}
+            GNU nano - {title ?? "New Buffer"}
           </span>
           <div className="flex items-center gap-1.5">
             <button

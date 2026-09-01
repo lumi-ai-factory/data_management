@@ -1,16 +1,19 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { findPage, getBreadcrumbs, getPageDescription } from "@/lib/content";
 import { PageLayout } from "@/components/PageLayout";
-import { siteConfig, absoluteUrl } from "../../site.config";
+import { siteConfig, absoluteUrl } from "@/lib/site";
 
 export const Route = createFileRoute("/$")({
   component: CatchAllPage,
   head: ({ params }) => {
     const slug = ((params as { _splat?: string })._splat ?? "").replace(/\/+$/, "");
     const page = findPage(slug);
-    const title = page?.frontmatter.title
-      ? `${page.frontmatter.title} — ${siteConfig.title}`
-      : siteConfig.title;
+    // Skip the suffix when a page's title already is the site name (which is
+    // derived from the home page's `#` heading), so the tab never repeats it.
+    const title =
+      page?.frontmatter.title && page.frontmatter.title !== siteConfig.title
+        ? `${page.frontmatter.title} | ${siteConfig.title}`
+        : siteConfig.title;
     if (!page) {
       return { meta: [{ title }, { property: "og:title", content: title }] };
     }

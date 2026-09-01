@@ -2,6 +2,13 @@
 @source "../src";
 @import "tw-animate-css";
 @import "katex/dist/katex.min.css";
+/* Self-hosted fonts (no request to Google, works offline). */
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/500.css";
 /* Syntax highlighting palette is defined below using only LUMI brand colours
    (no github.css import — that theme ships greens, reds, and oranges that
    are not part of the LUMI AIF palette). */
@@ -174,6 +181,13 @@ html {
   --callout-command-bg: oklch(0.96 0.012 240);
   --callout-command-border: oklch(0.83 0.04 240);
 
+  /* Collapsible <details> blocks — purple family, magenta affordance */
+  --details-bg: color-mix(in oklab, var(--lumi-purple) 4%, white);
+  --details-summary-bg: color-mix(in oklab, var(--lumi-purple) 13%, white);
+  --details-summary-bg-hover: color-mix(in oklab, var(--lumi-purple) 22%, white);
+  --details-border: color-mix(in oklab, var(--lumi-purple) 40%, white);
+  --details-accent: var(--lumi-magenta);
+
   --quiz-card-bg: oklch(0.985 0.012 290);
   --quiz-card-border: oklch(0.86 0.04 290);
   --quiz-header-bg: color-mix(in oklab, var(--lumi-purple) 8%, white);
@@ -243,6 +257,12 @@ html {
   --callout-tip-border: oklch(0.56 0.11 237);
   --callout-command-bg: oklch(0.23 0.012 250);
   --callout-command-border: oklch(1 0 0 / 12%);
+
+  --details-bg: oklch(0.235 0.02 290);
+  --details-summary-bg: oklch(0.3 0.045 290);
+  --details-summary-bg-hover: oklch(0.35 0.06 290);
+  --details-border: oklch(0.45 0.07 290);
+  --details-accent: color-mix(in oklab, var(--lumi-magenta) 80%, white);
 
   --quiz-card-bg: oklch(0.23 0.014 252);
   --quiz-card-border: oklch(1 0 0 / 12%);
@@ -485,6 +505,110 @@ html {
 .glossary-term:focus-visible {
   border-radius: 2px;
   box-shadow: 0 0 0 2px color-mix(in oklab, var(--lumi-magenta) 45%, transparent);
+}
+
+/* ============= Collapsible <details> blocks =============
+   The <summary> row has to read as a control, not as body text: purple-tinted
+   bar, magenta chevron, and a SHOW / HIDE label on the right edge. */
+.prose-lumi details {
+  margin: 1.5rem 0;
+  border: 1px solid var(--details-border);
+  border-radius: var(--radius-lg);
+  background: var(--details-bg);
+  overflow: hidden;
+}
+
+.prose-lumi details > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.7rem 1rem;
+  background: var(--details-summary-bg);
+  color: var(--color-foreground);
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: background-color 0.15s ease;
+}
+
+/* WebKit keeps its own triangle even when list-style is none. */
+.prose-lumi details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Chevron: a square with two borders, rotated. Right when closed, down when open. */
+.prose-lumi details > summary::before {
+  content: "";
+  flex: none;
+  width: 0.42rem;
+  height: 0.42rem;
+  margin-left: 0.15rem;
+  border-right: 2.5px solid var(--details-accent);
+  border-bottom: 2.5px solid var(--details-accent);
+  transform: translateY(-1px) rotate(-45deg);
+  transition: transform 0.2s ease;
+}
+
+.prose-lumi details[open] > summary::before {
+  transform: translateY(-2px) rotate(45deg);
+}
+
+.prose-lumi details > summary::after {
+  content: "Show";
+  flex: none;
+  margin-left: auto;
+  padding-left: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--details-accent);
+}
+
+.prose-lumi details[open] > summary::after {
+  content: "Hide";
+}
+
+.prose-lumi details > summary:hover {
+  background: var(--details-summary-bg-hover);
+}
+
+.prose-lumi details > summary:focus-visible {
+  outline: 2px solid var(--details-accent);
+  outline-offset: -2px;
+}
+
+.prose-lumi details[open] > summary {
+  border-bottom: 1px solid var(--details-border);
+}
+
+/* A heading used as the summary title keeps its heading size but drops the
+   block spacing and the h2 underline, so the bar stays a single row. */
+.prose-lumi details > summary > h1,
+.prose-lumi details > summary > h2,
+.prose-lumi details > summary > h3,
+.prose-lumi details > summary > h4,
+.prose-lumi details > summary > h5,
+.prose-lumi details > summary > h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+/* Body content, inset from the card edges. */
+.prose-lumi details > :not(summary) {
+  margin-left: 1.15rem;
+  margin-right: 1.15rem;
+}
+
+.prose-lumi details > summary + * {
+  margin-top: 1rem;
+}
+
+.prose-lumi details > :last-child:not(summary) {
+  margin-bottom: 1rem;
 }
 
 /* ============= Syntax highlighting (LUMI palette only) =============
@@ -745,6 +869,77 @@ pre.with-line-numbers .code-line::before {
 .nano-block .hljs-variable,
 .nano-block .hljs-params {
   color: oklch(0.82 0.08 290) !important;
+}
+
+/* ============= Mermaid diagrams ============= */
+/* Same surface and border tokens as regular code blocks, so all boxes on a
+   page share one colour. */
+.mermaid-block {
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem 0;
+  padding: 1rem;
+  border: 1px solid var(--code-border);
+  border-radius: var(--radius-lg);
+  background: var(--code-bg);
+  overflow-x: auto;
+}
+
+.mermaid-block svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Node labels are real HTML inside <foreignObject>, and mermaid sizes every box
+   by measuring that HTML in a scratch container attached to <body>, outside
+   .prose-lumi. The finished SVG then lands here, inside .prose-lumi, where the
+   prose paragraph rules suddenly apply: taller line-height plus 0.9rem of
+   vertical margin make the label taller than the box mermaid already drew for
+   it, so the text spills out the bottom. Pin the label typography back to the
+   values mermaid measured against. */
+.prose-lumi .mermaid-block p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.prose-lumi .mermaid-block strong {
+  font-weight: 700;
+}
+
+/* Mermaid inlines its own theme colour behind arrow labels; forcing it to
+   the box token here guarantees labels always blend into the box, whatever
+   hex mermaid was initialized with. */
+.mermaid-block .edgeLabel,
+.mermaid-block .edgeLabel p,
+.mermaid-block .labelBkg {
+  background-color: var(--code-bg) !important;
+}
+
+.mermaid-block rect.labelBkg {
+  fill: var(--code-bg) !important;
+}
+
+/* Pre-hydration fallback: the diagram source, dimmed, until mermaid loads. */
+.mermaid-loading pre {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-muted-foreground);
+  opacity: 0.7;
+}
+
+.mermaid-error {
+  border-color: color-mix(in oklab, var(--lumi-magenta) 40%, transparent);
+}
+
+.mermaid-error > p:first-child {
+  background: color-mix(in oklab, var(--lumi-magenta) 10%, var(--color-card));
+  border-color: color-mix(in oklab, var(--lumi-magenta) 40%, transparent);
+  color: var(--lumi-magenta);
+}
+
+.mermaid-error > p:last-child {
+  border-color: var(--color-border);
+  color: var(--color-muted-foreground);
 }
 
 /* ---------- Quiz blocks ---------- */

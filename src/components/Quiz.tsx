@@ -151,7 +151,7 @@ export function Quiz({ title, questions }: QuizData) {
               {state.score === 1
                 ? "Correct!"
                 : state.score > 0
-                  ? `Partially correct — ${Math.round(state.score * 100)}% credit.`
+                  ? `Partially correct: ${Math.round(state.score * 100)}% credit.`
                   : "Not quite."}
             </p>
             {question.explanation && (
