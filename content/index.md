@@ -31,21 +31,13 @@ This course is structured so you can choose your level of depth.
 - ⏱️ For a **quick overview**, focus on Section at a glance (Overview-pages) and Key takeaways in the beginning of each section.
 - 🔍 For **deeper understanding**, read the full content.
 
-### The course consists of three sections
-
-**1. Why data management matters**
-- Data as a strategic business asset
-- Governance, trust, and scalable AI
-
-**2. AI-ready data**
-- Understanding AI-ready data: chore characteristics, metadata & documentation
-- Applying AI-ready data: When AI-ready data meets real AI and HPC workflows
-
-**3. From data to scalable AI - FAIR‑aligned data lifecycle management for AI & HPC**
-- FAIR data for industry
-- Core components of industrial data lifecycle
-- Tools & enablers for FAIR-aligned data management
-
 > [!TIP] 💡 Tip
 > You do not need expertise in research data management to complete this course. The focus is on practical approaches that help organizations develop scalable, trustworthy AI and data-driven services.
 
+
+**The course consists of three sections**
+
+<figure>
+  <img src="./assets/RDM-course-outline.png" alt="Course outline: 1. Why data management matters, 2. AI-ready data, 3. From data to scalable AI - FAIR‑aligned data lifecycle management for AI & HPC" style="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: Course outline: 1. Why data management matters, 2. AI-ready data, 3. From data to scalable AI - FAIR‑aligned data lifecycle management for AI & HPC </em></figcaption>
+</figure>
