@@ -23,11 +23,6 @@ FAIR focuses on metadata quality, persistent identifiers, clear licensing, and s
 
 Importantly, **FAIR does not mean “open".** Most industrial data is proprietary or confidential, yet still benefits from FAIR practices. Internally FAIR‑aligned datasets are easier to find, understand, and reuse, while remaining protected through controlled access. The same principles also help organizations efficiently discover and evaluate external or shared datasets when relevant. Making data FAIR improves its internal usability while fully respecting commercial, ethical, or regulatory constraints.
 
-<figure>
-  <img src="./assets/FAIR.png" alt= "FAIR" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: FAIR</em></figcaption>
-</figure>
-
 ## 3.1.2 Key FAIR Principles for Industry
 
 >[!note] 💡Key takeaways
