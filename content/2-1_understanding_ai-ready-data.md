@@ -33,7 +33,7 @@ For example, a manufacturing company training a predictive maintenance model may
 > To avoid confusion, this course uses a clear distinction:
 >
 > - **AI‑ready data** refers to the **properties of the data itself**: What must be true about datasets before AI and HPC workflows can work reliably.
-> - **AI readiness** refers to **organizational preparedness** (systems, skills, governance) and is discussed elsewhere in the course.
+> - **AI readiness** refers to **organizational preparedness** (systems, skills, governance).
 
 <figure>
   <img src="./assets/AI-ready-and-AI-readiness.png" alt= "AI-ready data and AI-readiness" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
