@@ -55,7 +55,7 @@ The key challenge is that **meaning in industrial data lies in relationships and
 | PLM documents & design data | RAG + embeddings | Engineering knowledge becomes accessible: contextual Q&A across lifecycle and design data |
 
 <figure>
-  <img src="./assets/industrial-data-AI-use-cases.png" alt= "What becomes possible when data is AI-ready" ="width: 60%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/industrial-data-AI-use-cases.png" alt= "What becomes possible when data is AI-ready" ="width: 60%; max-width: 60%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: What becomes possible when data is AI-ready </em></figcaption>
 </figure>
 
