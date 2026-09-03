@@ -14,7 +14,7 @@ Learn why data management matters for industrial AI and HPC (Section 1), what AI
 
 >[!note] This course is structured so you can choose your level of depth.
 >
->⏱️ If you are **short on time**, focus on the **Section at a Glance** and **Key Takeaways** boxes for a quick overview of the most important concepts and their relevance. *Section at a Glance* appears on each main section page, while *Key Takeaways* appear at the beginning of each subsection.
+>⏱️ If you are **short on time**, focus on the **Section at a glance** and **Key takeaways** for a quick overview of the most important concepts and their relevance. *Section at a Glance* appears on each main section page, while *Key takeaways* appear at the beginning of each subsection.
 >
 >🔍 If you want **deeper insight**, explore the full content to see how these topics apply in real industrial AI and HPC environments and how organizations address them in practice.
 >
