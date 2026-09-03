@@ -36,14 +36,7 @@ Weak data management rarely fails loudly at first. Instead, it creates persisten
 
 Teams may spend months training models on data that later turns out to be incomplete, biased, or misinterpreted. HPC simulations may need to be rerun simply because input data, assumptions, or versions were not properly documented. As compute scales up, these inefficiencies become expensive very quickly, financially, operationally, and environmentally.
 
-Typical consequences include:
-
-- wasted GPU and HPC cycles due to reprocessing, rerunning, or debugging data issues
-- AI models that perform well in testing but fail in production
-- automation that must be constantly overridden by humans
-- costly delays caused by late discovery of data errors
-- loss of confidence among engineers, management, or customers
-- compliance and audit risks when data lineage cannot be reconstructed
+Typical consequences include: Wasted HPC and GPU resources, unreliable AI models, ineffective automation, and costly project delays. Poor data management also reduces stakeholder confidence and increases compliance and audit risks.
 
 <figure>
   <img src="./assets/weak-vs-good-dm.png" alt= "Weak vs good data management" style="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
