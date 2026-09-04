@@ -31,8 +31,8 @@ The goal of this section is to help teams assess whether their data is ready bef
 In many cases, these problems reflect underlying gaps in industrial data practices and workflow integration rather than isolated data defects.
 
 <figure>
-  <img src="./assets/costs-risks-not-ai-ready.png" alt= "Costs and risks when data is not AI-ready" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: Costs and risks when data is not AI-ready</em></figcaption>
+  <img src="./assets/costs-risks-not-ai-ready.png" alt= "When data is not AI-ready, wasted compute, delays, and lower trust are just the tip of the iceberg. The larger and more costly consequences remain hidden beneath the surface" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: When data is not AI-ready, wasted compute, delays, and lower trust are just the tip of the iceberg. The larger and more costly consequences remain hidden beneath the surface</em></figcaption>
 </figure>
 
 >[!tip] ✅ Practical Takeaway: AI‑Ready Data Check for AI & HPC
