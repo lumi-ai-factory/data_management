@@ -16,7 +16,7 @@ We appreciate your time and participation. Thank you for learning with us!
 
 
 
-# Further Reading
+# Further reading
 
 - [Microsoft Responsible AI Transparency Report (2025)](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Responsible-AI-Transparency-Report.pdf)
 
