@@ -61,7 +61,7 @@ In practice, raw data has little value on its own. Data becomes a business asset
 - structured and versioned so it fits automated workflows
 
 <figure>
-  <img src="./assets/data-as-a-business-asset.png" alt= "Data as a business asset" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <img src="./assets/data-as-a-business-asset.png" alt= "Data becomes a business asset and creates value when it is trustworthy, well-documented, structured and versioned" ="width: 80%; max-width: 180%; margin: 0 auto; display: block;" />
   <figcaption><em>Figure: Data as a business asset</em></figcaption>
 </figure>
 
