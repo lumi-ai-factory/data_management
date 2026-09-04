@@ -62,7 +62,7 @@ In practice, raw data has little value on its own. Data becomes a business asset
 
 <figure>
   <img src="./assets/data-as-a-business-asset.png" alt= "Data becomes a business asset and creates value when it is trustworthy, well-documented, structured and versioned" ="width: 80%; max-width: 180%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: Data as a business asset</em></figcaption>
+  <figcaption><em>Figure: Data becomes a business asset and creates value when it is trustworthy, well-documented, structured and versioned</em></figcaption>
 </figure>
 
 In AI and HPC contexts, this distinction matters enormously. Optimized and well‑described datasets enable faster model convergence, more stable simulations, and lower compute consumption. Conversely, unmanaged datasets lead to repeated preprocessing, brittle pipelines, and constant rework.
