@@ -23,8 +23,8 @@ Key regulatory and standards drivers include:
 - **Sector‑specific standards** (e.g. ISO, IEC), which require reproducibility, traceability, and controlled data handling
 
 <figure>
-  <img src="./assets/key-regulatory-and-standards-drivers.png" alt= "Key regulatory and standards drivers" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: Key regulatory and standards drivers</em></figcaption>
+  <img src="./assets/key-regulatory-and-standards-drivers.png" alt= "Key regulatory and standards drivers for Industrial AI and data management, including GDPR, the EU AI Act, and sector-specific standards such as ISO and IEC" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: Key regulatory and standards drivers for Industrial AI and data management, including GDPR, the EU AI Act, and sector-specific standards such as ISO and IEC</em></figcaption>
 </figure>
 
 Good data management does not eliminate regulatory effort, but it makes compliance achievable at scale. Without proper metadata, lineage, and versioning, audits and certifications become manual, fragile, and error‑prone—especially in complex AI and HPC environments.
