@@ -1,9 +1,9 @@
 ---
-title: "Feedback and Further Reading"
+title: "Feedback and further reading"
 nav_order: 6
 ---
 
-# Course feedback
+## Course feedback
 
 🎉 **Congratulations on completing the AI‑ready data and FAIR data management for industry course!**
 
@@ -11,12 +11,11 @@ Your feedback helps us improve the course content, learning experience, and futu
 
 We appreciate your time and participation. Thank you for learning with us!
 
-## 👉  Please complete the **[feedback survey](https://link.webropolsurveys.com/S/3CA6D807E417D4F0)**.
+> 👉  Please complete the **[feedback survey](https://link.webropolsurveys.com/S/3CA6D807E417D4F0)**.
+>
 
 
-
-
-# Further reading
+## Further reading
 
 - [Microsoft Responsible AI Transparency Report (2025)](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Responsible-AI-Transparency-Report.pdf)
 
