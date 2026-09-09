@@ -99,6 +99,11 @@ Knowledge graphs connect datasets, models, processes, metadata, and documentatio
 
 By capturing relationships explicitly, knowledge graphs help prevent silos and improve semantic consistency across the organization. This supports better decision‑making, smoother collaboration, and more reliable automated pipelines in large industrial AI and HPC environments, where understanding dependencies is critical for reproducibility, governance, and scalable operations.
 
+<figure>
+  <img src="./assets/knowledge-graph.png" alt= "Knowledge Graph" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: Knowledge Graph</em></figcaption>
+</figure>
+
 > [!TIP] ✅ Practical tips
 >
 > - Use a graph‑based representation to explicitly link datasets, preprocessing steps, models, and results.
