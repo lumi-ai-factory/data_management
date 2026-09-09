@@ -22,7 +22,7 @@ We appreciate your time and participation. Thank you for learning with us!
 - [OECD AI Principles](https://www.oecd.org/en/topics/ai-principles.html): The foundational global framework for trustworthy AI, emphasizing transparency, accountability, data governance, and human oversight.
 - [Catalogue of Tools & Metrics for Trustworthy AI](https://oecd.ai/en/catalogue/overview)
 - [Microsoft Responsible AI Transparency Report (2025)](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Responsible-AI-Transparency-Report.pdf)
-- Pei-Hung Lin, Chunhua Liao, Winson Chen, Tristan Vanderbruggen, Murali Emani, Hailu Xu. **[Making Machine Learning Datasets and Models FAIR for HPC: A Methodology and Case Study](https://doi.org/10.48550/arXiv.2211.02092)**. Article shows why HPC and AI amplify the cost of poor documentation and data provenance.
+- Pei-Hung Lin, Chunhua Liao, Winson Chen, Tristan Vanderbruggen, Murali Emani, Hailu Xu. [Making Machine Learning Datasets and Models FAIR for HPC: A Methodology and Case Study](https://doi.org/10.48550/arXiv.2211.02092).
 - [Responsible AI in Practice - UNESCO & Thomson Reuters Foundation (2026)](https://www.trust.org/wp-content/uploads/2026/03/AICDI-2025-Responsible-AI-in-practice-1.pdf): Practical insights into how companies implement responsible AI, with a focus on data governance, training data controls, and transparency gaps.
 - [Big Data Value Association](https://bdva.eu/news/ai-ready-data-products-publication/)
 - [What is AI-Ready Data?](https://datahub.com/resources/ai-ready-data/)
