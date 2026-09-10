@@ -13,7 +13,7 @@ nav_order: 1
 >- FAIR does not mean open. Proprietary and confidential data can be FAIR.
 >- FAIR supports automation, scalability, reproducibility, and efficient compute use.
 
-In a business and high‑performance computing (HPC) environment, FAIR data refers to data that is Findable, Accessible, Interoperable, and Reusable—in practice meaning that data is
+In a business and high‑performance computing (HPC) environment, FAIR data refers to data that is Findable, Accessible, Interoperable, and Reusable. In practice meaning that data is
 
 - **well‑structured,**
 - **consistently documented, and**
@@ -66,7 +66,7 @@ Findable means datasets can be reliably located by people and automated AI/HPC w
 >- Maintain a searchable internal data catalog that indexes large datasets such as multilingual text corpora, material‑science results, sensor logs, or image collections.
 >- Use metadata that supports filtering and targeted discovery, enabling engineers to quickly locate subsets based on attributes like language, document type, simulation parameters, or dataset version.
 >- Apply knowledge‑graph‑backed metadata to link related datasets, experiments, model versions, and documentation, making relationships explicit and machine‑actionable.
->- Ensure discoverability across the entire workflow, so large, complex datasets—from images and simulations to quantum‑circuit data and robotics logs—remain traceable and understandable throughout their lifecycle.
+>- Ensure discoverability across the entire workflow, so large, complex datasets, from images and simulations to quantum‑circuit data and robotics logs, remain traceable and understandable throughout their lifecycle.
 
 ### Accessible
 
