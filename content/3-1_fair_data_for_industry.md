@@ -52,12 +52,6 @@ Findable means datasets can be reliably located by people and automated AI/HPC w
 - Metadata based on shared schemas or graph‑based structures
 - Explicit focus on internal discoverability across teams and tools
 
-<figure>
-  <img src="./assets/findable.png" alt= "Findable" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: F = Findable</em></figcaption>
-</figure>
-
-
 >[!tip]✅ Practical examples
 >
 >To make industrial and HPC datasets findable in practice, organizations can:
@@ -77,11 +71,6 @@ Accessibility means that once data has been found, it can be retrieved under cle
 - Authenticated, API‑based data access
 - Machine or service accounts for AI and HPC jobs
 - Clear access rules recorded in metadata
-
-<figure>
-  <img src="./assets/accessible.png" alt= "Accessible" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: A = Accessible</em></figcaption>
-</figure>
 
 >[!tip]✅ Practical examples
 >
@@ -105,11 +94,6 @@ Interoperable means that data can flow seamlessly between different tools, platf
 - Common schemas, naming conventions
 - Shared vocabularies, taxonomies and ontologies
 
-<figure>
-  <img src="./assets/interoperable.png" alt= "Interoperable" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: I = Interoperable</em></figcaption>
-</figure>
-
 >[!tip]✅ Practical examples
 >
 >To make industrial and HPC datasets interoperable in practice, organizations can:
@@ -130,11 +114,6 @@ Reusable means that data is prepared so it can be reliably used again for new mo
 - Explicit usage and licensing rules
 - Quality indicators and known limitations
 - Dataset and model versioning
-
-<figure>
-  <img src="./assets/reusable.png" alt= "Reusable" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: R = Reusable</em></figcaption>
-</figure>
 
 >[!tip]✅ Practical examples
 >
