@@ -32,7 +32,7 @@ Industrial data lifecycles begin with clear planning. Before collecting any data
 
 
 **Planning should also outline the expected lifecycle**: how data will be collected, stored, processed, reused, archived, and eventually deleted, and who is responsible at each stage. Considering AI and HPC needs early, such as formats optimized for parallel access, ensures data can scale without redesign and avoids costly rework once GPU‑ or HPC‑based pipelines are already in place. Teams need to capture these decisions in a shared form so they remain visible as data moves through AI and HPC workflows.
- 
+
 Finally, planning clarifies the expected value of the data, whether improved model accuracy, more efficient robotics control, higher simulation fidelity, or other business outcomes. This helps ensure that investments in data deliver meaningful and measurable impact.
 
 > [!TIP] ✅ Practical tips
