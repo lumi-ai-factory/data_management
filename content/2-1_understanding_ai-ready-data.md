@@ -94,8 +94,8 @@ The elements below describe **what must be true about the data itself** before A
 ### Characteristics of AI-ready data (Industry & HPC Context)
 
 <figure>
-  <img src="./assets/ai-ready-data-blocks.png" alt= "Building blocks of AI-ready data: These characteristics transform available data into a foundation for effective AI use by enabling trustworthy, scalable, and repeatable AI workflows" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: Building blocks of AI-ready data: These characteristics transform available data into a foundation for effective AI use by enabling trustworthy, scalable, and repeatable AI workflows</em></figcaption>
+  <img src="./assets/ai-ready-data-blocks.png" alt= "Building blocks and characteristics of AI-ready data: These elements transform available data into a foundation for effective AI use" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: Building blocks and characteristics of AI-ready data: These elements transform available data into a foundation for effective AI use</em></figcaption>
 </figure>
 
 | AI-ready data characteristic | What it means and why it matters | Example |
