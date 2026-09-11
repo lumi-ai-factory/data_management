@@ -55,8 +55,8 @@ The key challenge is that **meaning in industrial data lies in relationships and
 | PLM documents & design data | RAG + embeddings | Engineering knowledge becomes accessible: contextual Q&A across lifecycle and design data |
 
 <figure>
-  <img src="./assets/industrial-data-AI-use-cases.png" alt= "What becomes possible when data is AI-ready" ="width: 60%; max-width: 60%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: What becomes possible when data is AI-ready </em></figcaption>
+  <img src="./assets/industrial-data-AI-use-cases.png" alt= "Key outcomes of AI-ready data: analyzable relationships, searchable knowledge, integrated systems, measurable processes, and improved access to engineering knowledge" ="width: 60%; max-width: 60%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: Key outcomes of AI-ready data: analyzable relationships, searchable knowledge, integrated systems, measurable processes, and improved access to engineering knowledge</em></figcaption>
 </figure>
 
 ```quiz
@@ -94,8 +94,8 @@ The elements below describe **what must be true about the data itself** before A
 ### Characteristics of AI-ready data (Industry & HPC Context)
 
 <figure>
-  <img src="./assets/ai-ready-data-blocks.png" alt= "AI-ready data building blocks" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: AI-ready data "building blocks"</em></figcaption>
+  <img src="./assets/ai-ready-data-blocks.png" alt= "Building blocks of AI-ready data: These characteristics transform available data into a foundation for effective AI use by enabling trustworthy, scalable, and repeatable AI workflows" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: Building blocks of AI-ready data: These characteristics transform available data into a foundation for effective AI use by enabling trustworthy, scalable, and repeatable AI workflows</em></figcaption>
 </figure>
 
 | AI-ready data characteristic | What it means and why it matters | Example |
