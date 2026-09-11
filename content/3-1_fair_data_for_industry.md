@@ -37,8 +37,8 @@ Importantly, **FAIR does not mean “open".** Most industrial data is proprietar
 >Together, these practices reduce duplication, improve automation, and ensure that valuable industrial datasets remain usable across systems, teams, and time.
 
 <figure>
-  <img src="./assets/FAIR-principles.png" alt= "FAIR-principles" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: FAIR-principles</em></figcaption>
+  <img src="./assets/FAIR-principles.png" alt= "FAIR principles as a foundation for AI-ready data, ensuring that data is findable, accessible, interoperable, and reusable" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: FAIR principles as a foundation for AI-ready data, ensuring that data is findable, accessible, interoperable, and reusable</em></figcaption>
 </figure>
 
 ### Findable
