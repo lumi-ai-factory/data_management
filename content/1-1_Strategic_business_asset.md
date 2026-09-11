@@ -39,8 +39,8 @@ Teams may spend months training models on data that later turns out to be incomp
 Typical consequences include: Wasted HPC and GPU resources, unreliable AI models, ineffective automation, and costly project delays. Poor data management also reduces stakeholder confidence and increases compliance and audit risks.
 
 <figure>
-  <img src="./assets/weak-vs-good-dm.png" alt= "Weak vs good data management" style="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: Weak vs good data management</em></figcaption>
+  <img src="./assets/weak-vs-good-dm.png" alt= "Comparison of the consequences of weak data management and the benefits of good data management" style="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: Comparison of the consequences of weak data management and the benefits of good data management</em></figcaption>
 </figure>
 
 Machine learning systems faithfully learn from the data they are given, including inconsistencies, biases, and errors. Because AI pipelines often involve multiple teams and long processing chains, data problems discovered late are especially expensive to fix. This is why mature organizations invest in early data validation, monitoring, and quality controls instead of relying on downstream fixes.
