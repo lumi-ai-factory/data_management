@@ -38,6 +38,6 @@ This course is structured so you can choose your level of depth.
 **The course consists of three sections**
 
 <figure>
-  <img src="./assets/RDM-course-outline.png" alt="Course outline: 1. Why data management matters, 2. AI-ready data, 3. From data to scalable AI - FAIR‑aligned data lifecycle management for AI & HPC" style="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: Course outline: 1. Why data management matters, 2. AI-ready data, 3. From data to scalable AI - FAIR‑aligned data lifecycle management for AI & HPC </em></figcaption>
+  <img src="./assets/RDM-course-outline.png" alt="Course outline: 1. Why data management matters, 2. What makes data AI-ready, 3. How FAIR‑aligned data lifecycle management enables scalable AI & HPC" style="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: Course outline: 1. Why data management matters, 2. What makes data AI-ready, 3. How FAIR‑aligned data lifecycle management enables scalable AI & HPC</em></figcaption>
 </figure>
