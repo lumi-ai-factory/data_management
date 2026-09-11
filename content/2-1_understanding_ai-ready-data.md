@@ -36,8 +36,8 @@ For example, a manufacturing company training a predictive maintenance model may
 > - **AI readiness** refers to **organizational preparedness** (systems, skills, governance).
 
 <figure>
-  <img src="./assets/AI-ready-and-AI-readiness.png" alt= "AI-ready data and AI-readiness" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: AI-ready data and AI-readiness</em></figcaption>
+  <img src="./assets/AI-ready-and-AI-readiness.png" alt= "AI-ready data refers to the quality and characteristics of data, while AI readiness refers to an organization's preparedness to adopt and use AI effectively" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: AI-ready data refers to the quality and characteristics of data, while AI readiness refers to an organization's preparedness to adopt and use AI effectively</em></figcaption>
 </figure>
 
 ### Industrial data
