@@ -169,8 +169,8 @@ For AI‑ready data, metadata provides the context needed to interpret and trust
 Metadata is therefore not an add‑on. It is **one of the defining characteristics that makes data AI‑ready**.
 
 <figure>
-  <img src="./assets/metadata.png" alt= "Metadata" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: Metadata</em></figcaption>
+  <img src="./assets/metadata.png" alt= "Metadata provides essential context about data origin, collection, processing, limitations, and usage conditions, making it a defining characteristic of AI-ready data" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: Metadata provides essential context about data origin, collection, processing, limitations, and usage conditions, making it a defining characteristic of AI-ready data</em></figcaption>
 </figure>
 
 ```quiz
