@@ -3,9 +3,6 @@ title: "Home"
 nav_order: 1
 ---
 
-> [!warning] Notice: Under development!
-> This material is currently under development. Content, structure, pictures, examples, and linked resources may change.
-
 # AI‑ready data and FAIR data management for industry
 
 >[!info] 🚀 Welcome to AI‑ready data and FAIR data management for industry -course!
