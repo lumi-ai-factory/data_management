@@ -49,7 +49,7 @@ Clear documentation and traceability support:
 > - unclear responsibility when systems fail or behave unexpectedly
 > 
 
-Responsible practice means treating AI as a support tool, not a decision‑maker, and ensuring that humans remain accountable for outcomes, particularly in safety‑critical or highly automated environments.
+Responsible practice means treating validated AI as a support tool, not a decision‑maker, and ensuring that humans remain accountable for outcomes, particularly in safety‑critical or highly automated environments.
 
 <figure>
   <img src="./assets/responsible-ethical-use-of-data.png" alt= "Comparison of transparent and traceable data and AI practices versus the risks associated with a lack of transparency" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
