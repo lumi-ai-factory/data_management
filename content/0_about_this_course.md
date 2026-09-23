@@ -23,7 +23,7 @@ Learn why data management matters for industrial AI and HPC (Section 1), what AI
 
 ## 🌱 Who this course is for (and who it is not)
 
-This course is designed for **industry professionals working with AI, data, or high-performance computing**, including data engineers, AI/ML practitioners, software and systems engineers, architects, R&D teams, and technical project leads. It is especially relevant for organizations using or planning to use **HPC and AI Factory-type environments**, where data quality, structure, and lifecycle management directly affect cost, performance, and reliability.
+This course is designed for **industry professionals working with AI, data, or high-performance computing**, including data engineers, AI/ML practitioners, software and systems engineers, architects, R&D teams, and technical project leads. It is especially relevant for organizations developing AI solutions in **HPC and AI Factory-type environments**, where data quality, structure, and lifecycle management directly affect cost, performance, and reliability.
 
 The course assumes basic familiarity with data and AI concepts but does **not** require deep prior knowledge of research data management or formal FAIR theory. Its focus is practical and operational: how to manage data so that AI and HPC workflows work effectively in real industrial settings.
 
