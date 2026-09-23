@@ -79,7 +79,7 @@ Responsible data use therefore requires:
 - avoiding the upload of sensitive, restricted, or unpublished material without safeguards
 - understanding how tools store, retain, or reuse input data
 
-Choosing approved tools, applying anonymization where needed, and enforcing clear usage rules reduce both ethical and operational risk.
+Choosing approved tools, applying anonymization where needed, and enforcing clear usage rules defined by your organization reduce both ethical and operational risk. 
 
 ## Integrity, reproducibility, and long‑term trust
 
