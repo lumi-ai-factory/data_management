@@ -49,4 +49,4 @@ In many cases, these problems reflect underlying gaps in industrial data practic
 > - **Governance:** Are usage rules, responsibilities, and controls clearly defined?
 > - **Operational integration:** Is data generated and maintained as part of everyday workflows rather than prepared separately for AI projects?
 >
-> If most answers are “yes,” your data is forming a solid foundation for **scalable, cost‑effective, and trustworthy AI and HPC workloads**, including those run in LUMI‑type AI Factory environments.
+> If most answers are “yes,” your data is forming a solid foundation for **scalable, cost‑effective, and trustworthy AI and HPC projects**.
