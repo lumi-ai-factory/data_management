@@ -16,7 +16,7 @@ nav_order: 2
 >
 Industrial AI and HPC applications often operate in regulated environments such as energy, healthcare, automotive, and manufacturing. Regulations and standards increasingly focus on **how data is collected, processed, documented, and reused**, not just on model behavior.
 
-Key regulatory and standards drivers include:
+Key regulatory and standards drivers promote data quality, traceability, governance, and compliance:
 
 - **GDPR**, which imposes requirements on data accuracy, retention, access control, and transparency
 - **The EU AI Act**, which introduces obligations for high‑risk AI systems, including dataset relevance, representativeness, documentation, traceability, and bias mitigation
