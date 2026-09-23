@@ -156,7 +156,7 @@ In AI and HPC environments,**metadata** is not optional documentation. It is a *
 
 AI systems cannot infer meaning on their own. Without metadata, models cannot reliably distinguish whether a value represents a customer age, a product price, or a machine temperature. As automation and compute scale increase, missing or ambiguous metadata quickly leads to failed training runs, unreliable results, or datasets that cannot be safely reused.
 
-Without clear metadata, an AI model may misinterpret the data and produce unsafe or misleading conclusions. In LUMI‑type AI Factory environments, the same principle applies to simulation outputs, sensor streams, image and video data, or large text corpora. Engineering simulation results become reusable across teams only when metadata records the software version, configuration parameters, and physical assumptions used to generate the data. Without this context, results cannot be reliably reproduced or trusted later.
+Without clear metadata, an AI model may misinterpret the data and produce unsafe or misleading conclusions. In LUMI‑type AI Factory environments used for AI development, training, testing, and validation, the same principle applies to simulation outputs, sensor streams, image and video data, or large text corpora. Engineering simulation results become reusable across teams only when metadata records the software version, configuration parameters, and physical assumptions used to generate the data. Without this context, results cannot be reliably reproduced or trusted later.
 
 For AI‑ready data, metadata provides the context needed to interpret and trust data at scale. This typically includes information about:
 
