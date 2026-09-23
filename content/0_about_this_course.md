@@ -25,6 +25,9 @@ Learn why data management matters for industrial AI and HPC (Section 1), what AI
 
 This course is designed for **industry professionals working with AI, data, or high-performance computing**, including data engineers, AI/ML practitioners, software and systems engineers, architects, R&D teams, and technical project leads. It is especially relevant for organizations developing AI solutions in **HPC and AI Factory-type environments**, where data quality, structure, and lifecycle management directly affect cost, performance, and reliability.
 
+>[!info] About AI Factory environments
+>LUMI AI Factory provides services and resources for AI development, training, testing, validation, and scaling. The data management practices presented in this course >apply across the full AI lifecycle. The same principles of data quality, metadata, documentation, traceability, versioning, governance, and reuse are important regardless >of the environment, from development and testing to operational use.
+
 The course assumes basic familiarity with data and AI concepts but does **not** require deep prior knowledge of research data management or formal FAIR theory. Its focus is practical and operational: how to manage data so that AI and HPC workflows work effectively in real industrial settings.
 
 > [!warning] This course is **not** intended as:
