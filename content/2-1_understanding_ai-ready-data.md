@@ -18,6 +18,18 @@ nav_order: 1
 **AI-ready data means data that can be used reliably, repeatedly, and at scale by AI and HPC workflows.**
 It is data that machines can interpret automatically, without constant manual preparation, and that teams can trust enough to reuse across models, projects, and time.
 
+> [!warning] ⚠️ AI‑ready data vs. AI readiness
+>
+> To avoid confusion, this course uses a clear distinction:
+>
+> - **AI‑ready data** refers to the **properties of the data itself**: What must be true about datasets before AI and HPC workflows can work reliably.
+> - **AI readiness** refers to **organizational preparedness** (systems, skills, governance) to adopt and use AI effectively.
+
+<figure>
+  <img src="./assets/AI-ready-and-AI-readiness.png" alt= "AI-ready data refers to the quality and characteristics of data, while AI readiness refers to an organization's preparedness to adopt and use AI effectively" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
+  <figcaption><em>Figure: AI-ready data refers to the quality and characteristics of data, while AI readiness refers to an organization's preparedness to adopt and use AI effectively</em></figcaption>
+</figure>
+
 In practice, AI‑ready data is not simply “clean data.” It is data that has been prepared so that AI pipelines can consume it efficiently. This means the data has:
 
 - sufficient **structure** for machines to interpret it consistently
@@ -28,17 +40,6 @@ When these properties are missing, AI projects often slow down, not because mode
 
 For example, a manufacturing company training a predictive maintenance model may collect sensor data from several production lines. If timestamps are stored differently or machine states are labeled inconsistently across sites, engineers may spend weeks reformatting data before training can begin. When data is AI‑ready from the start, this preparation effort becomes smaller, faster, and repeatable.
 
-> [!warning] ⚠️ AI‑ready data vs. AI readiness
->
-> To avoid confusion, this course uses a clear distinction:
->
-> - **AI‑ready data** refers to the **properties of the data itself**: What must be true about datasets before AI and HPC workflows can work reliably.
-> - **AI readiness** refers to **organizational preparedness** (systems, skills, governance).
-
-<figure>
-  <img src="./assets/AI-ready-and-AI-readiness.png" alt= "AI-ready data refers to the quality and characteristics of data, while AI readiness refers to an organization's preparedness to adopt and use AI effectively" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
-  <figcaption><em>Figure: AI-ready data refers to the quality and characteristics of data, while AI readiness refers to an organization's preparedness to adopt and use AI effectively</em></figcaption>
-</figure>
 
 ### Industrial data
 
