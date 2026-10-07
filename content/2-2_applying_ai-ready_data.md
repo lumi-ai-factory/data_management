@@ -10,7 +10,7 @@ nav_order: 2
 >
 > - AI readiness depends on whether AI‑ready data can be used in real workflows at scale.
 > - Good data alone is not enough if it cannot flow reliably and automatically into AI pipelines.
-> - Readiness issues often appear only when automation, parallelism, and compute scale.
+> - Data readiness issues often appear only when automation, parallelism, and compute scale.
 > - Data readiness is a practical, operational condition, not an abstract maturity label.
 
 
