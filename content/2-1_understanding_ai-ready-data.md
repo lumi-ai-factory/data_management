@@ -33,8 +33,8 @@ It is data that machines can interpret automatically, without constant manual pr
 In practice, AI‑ready data is not simply “clean data.” It is data that has been prepared so that AI pipelines can consume it efficiently. This means the data has:
 
 - sufficient **structure** for machines to interpret it consistently
-- enough **consistency** for models to utilize from it reliably
-- enough **context** for teams to understand, trust, and reuse it later
+- enough **consistency** for models to utilize it reliably
+- enoug hmetadata explaining the **context** for teams to understand, trust, and reuse it later
 
 When these properties are missing, AI projects often slow down, not because models are difficult, but because data must be repeatedly fixed, reformatted, or reinterpreted. Even technically correct models may fail to gain acceptance if the underlying data appears unreliable or poorly documented.
 
@@ -157,7 +157,7 @@ In AI and HPC environments,**metadata** is not optional documentation. It is a *
 
 AI systems cannot infer meaning on their own. Without metadata, models cannot reliably distinguish whether a value represents a customer age, a product price, or a machine temperature. As automation and compute scale increase, missing or ambiguous metadata quickly leads to failed training runs, unreliable results, or datasets that cannot be safely reused.
 
-Without clear metadata, an AI model may misinterpret the data and produce unsafe or misleading conclusions. In LUMI‑type AI Factory environments used for AI development, training, testing, and validation, the same principle applies to simulation outputs, sensor streams, image and video data, or large text corpora. Engineering simulation results become reusable across teams only when metadata records the software version, configuration parameters, and physical assumptions used to generate the data. Without this context, results cannot be reliably reproduced or trusted later.
+Without clear metadata, an AI model may misinterpret the data and produce unsafe or misleading conclusions. In environments used for AI development, training, testing, and validation, the same principle applies to simulation outputs, sensor streams, image and video data, or large text corpora. Engineering simulation results become reusable across teams only when metadata records the software version, configuration parameters, and physical assumptions used to generate the data. Without this context, results cannot be reliably reproduced or trusted later.
 
 For AI‑ready data, metadata provides the context needed to interpret and trust data at scale. This typically includes information about:
 
