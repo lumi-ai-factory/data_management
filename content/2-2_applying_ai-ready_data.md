@@ -35,7 +35,7 @@ As AI workloads scale onto GPUs and HPC systems, small gaps in data readiness be
   <figcaption><em>Figure: What “data readiness” looks like in real AI & HPC workflows</em></figcaption>
 </figure>
 
-In LUMI‑type AI Factory environments, these differences surface quickly. Simulation data may not be reusable because preprocessing steps were not documented. Image or video datasets may need re‑encoding before every training run. Large text corpora may exist on shared storage but be difficult to discover or access at scale. Pipelines that work sequentially often fail when thousands of parallel workers expect consistent inputs.
+In AI environments, these differences surface quickly. Simulation data may not be reusable because preprocessing steps were not documented. Image or video datasets may need re‑encoding before every training run. Large text corpora may exist on shared storage but be difficult to discover or access at scale. Pipelines that work sequentially often fail when thousands of parallel workers expect consistent inputs.
 
 When data is AI‑ready, workflows behave differently. Training and simulation runs become repeatable, datasets can be reused with limited extra effort, and scaling compute reveals fewer surprises rather than new failure modes.
 
