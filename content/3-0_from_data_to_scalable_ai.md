@@ -14,8 +14,8 @@ This section explains how managing data **across its full lifecycle** enables re
 >[!warning] ⚠️ Costs and risks when data is poorly managed
 >
 >- **No planning:** Data does not meet AI or HPC requirements, leading to costly re-runs.
->- **No validation or standards:** Poor-quality data reaches workflows and wastes compute.
->- **No governance or access rules:** Data cannot be reliably found or used by teams.
+>- **No validation or standards:** Poor-quality data is used in workflows, leading to wasted computing resources.
+>- **No governance or access rules:** Data cannot be reliably found or used by teams and machines.
 >- **No quality control:** Errors or bias propagate into models.
 >- **No metadata:** Data becomes unusable outside its original context.
 >- **No retention or reuse strategy:** Storage costs rise and teams rebuild datasets from scratch.
