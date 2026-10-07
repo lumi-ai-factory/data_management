@@ -17,10 +17,10 @@ nav_order: 2
 > - **Storage & Access:** Use tiered storage (hot/warm/cold), apply governance and access controls, and respect data residency requirements.
 > - **Processing & Quality Control:** Clean, normalize, and enrich data using scalable AI and HPC preprocessing workflows.
 > - **Documentation & Metadata:** Provide both human‑ and machine‑readable metadata using standardized schemas, controlled vocabularies, and ontologies.
-> - **Preservation & Retention:** Follow retention schedules, archive with durable formats, and ensure secure deletion of data that is no longer needed.
+> - **Retention & Preservation:** Follow retention schedules, archive with durable formats, and ensure secure deletion of data that is no longer needed.
 > - **Reuse & Sharing:** Enable cross‑team and cross‑organizational reuse through consistent structures and API‑based access.
 >
-> This lifecycle approach ensures industrial datasets remain high‑quality, compliant, and ready for intensive AI and HPC workloads such as those run on LUMI AI Factory.
+> This lifecycle approach ensures industrial datasets remain high‑quality, compliant, and ready for intensive AI and HPC workloads.
 
 <figure>
   <img src="./assets/data-management-lifecycle.png" alt= "Data management lifecycle" ="width: 100%; max-width: 100%; margin: 0 auto; display: block;" />
