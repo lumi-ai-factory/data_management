@@ -86,7 +86,7 @@ Together, these practices ensure reliable, secure, and automated data access for
 
 ### Interoperable
 
-Interoperable means that data can flow seamlessly between different tools, platforms, and teams without manual conversion. In HPC workflows, interoperability is critical because data must move automatically through multiple simulation, preprocessing, and model‑training stages without manual correction.
+Interoperable means that data can flow seamlessly between different tools, platforms, and teams without manual conversion. In HPC workflows, interoperability is critical because data must move automatically from preprosessing to simulation without manual correction.
 
 **What this looks like**
 
