@@ -30,7 +30,7 @@ Key regulatory and standards drivers promote data quality, traceability, governa
 Good data management does not eliminate regulatory effort, but it makes compliance achievable at scale. Without proper metadata, lineage, and versioning, audits and certifications become manual, fragile, and error‑prone, especially in complex AI and HPC environments.
 
 ## 1.2.1 Ethical and Responsible Use of Data
-Beyond formal regulation, organizations face growing expectations around ethical and responsible data use. In AI‑driven systems, ethical risks are often data risks in disguise. Unclear data provenance, undocumented transformations, inappropriate reuse, or loss of control when data is processed at scale can all lead to unintended and difficult‑to‑detect consequences.
+Beyond formal regulation and sector-specific standardization, organizations face growing expectations around ethical and responsible data use. In AI‑driven systems, ethical risks are often data risks in disguise. Unclear data provenance, undocumented transformations, inappropriate reuse, or loss of control when data is processed at scale can all lead to unintended and difficult‑to‑detect consequences.
 
 Ethical and responsible AI is therefore not achieved by high‑level principles alone. It is implemented through everyday data management practices that make data use visible, traceable, and accountable.
 
