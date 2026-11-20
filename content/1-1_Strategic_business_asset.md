@@ -45,7 +45,10 @@ Typical consequences include: Wasted HPC and GPU resources, unreliable AI models
 
 Machine learning systems faithfully learn from the data they are given, including inconsistencies, biases, and errors. Because AI pipelines often involve multiple teams and long processing chains, data problems discovered late are especially expensive to fix. This is why mature organizations invest in early data validation, monitoring, and quality controls instead of relying on downstream fixes.
 
+<em>Watch a video about why data management has become critical for industrial AI and HPC:</em>
+
 <iframe width="560" height="315" src="https://youtube.com/embed/zrOmpolx_-w?si=Fsw-YDV4XZ8BNBzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## 1.1.3 Turning data into a reusable business asset
 
